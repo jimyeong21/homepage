@@ -19,10 +19,34 @@ button{
     font-family: 'Gmarket Sans';
 }
 
-/* header */
-header{
+/* 메인-공통 */
+h1{
+    margin-top: 13.7rem;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+}
+h2{
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.02em;
+}
+.main-tit-undder{
+    max-width: 46.7rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: -0.02em;
+}
+header,.wrap>div{
     border-bottom: 0.1rem solid #777;
 }
+
+/* header */
 header .innerframe-1700{
     display: flex;
     justify-content: space-between;
@@ -86,7 +110,6 @@ header ul li:hover::after{
 .visual{
     position: relative;
     height: 99.6rem;
-    border-bottom: 0.1rem solid #777;
 }
 .web-box{
     position: absolute;
@@ -96,12 +119,22 @@ header ul li:hover::after{
     min-height: 40.3rem;
     width: 100%;
     transform: translate(-50%,-50%);
-    background: #111;
-    border: 1px solid #00D67A;
 }
-.web-box .tit{
+.web-box::after{
+    position: absolute;
+    top:1.7rem;
+    left:1.2rem;
+    width: 100%;
+    height: 100%;
+    background: #777;
+    border: 1px solid #00D67A;
+    content: "";
+}
+.web-box-tit{
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between ;
     height: 6.6rem;
     padding: 0 3.5rem;
     font-weight: 500;
@@ -109,19 +142,44 @@ header ul li:hover::after{
     line-height: 2.2rem;
     letter-spacing: -0.02em;
     color: #00D67A;
-    border-bottom: 0.1rem solid #00D67A;
+    border: 0.1rem solid #00D67A;
+    background: #111;
+    z-index: 2;
 }
-.visual-slide{
-    padding:6.8rem;
+.web-box-tit .deco{
+    display: flex;
 }
-.visual-slide P{
+.web-box-tit .deco div{
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: 1.6rem;
+    border: 0.2rem solid #00D67A;
+    border-radius: 50%;
+}
+.web-box-tit .deco div:last-of-type{
+    border-color: #fff;
+    margin-right: 0;
+}
+.web-box-con{
+    position: relative;
+    min-height: 33.7rem;
+    padding:7.7rem 6.8rem;
+    background: #111;
+    z-index: 2;
+    border: 0.1rem solid #00D67A;
+    border-top:none;
+}
+.web-box-con P{
     margin-bottom: 3rem;
     font-weight: 400;
     font-size: 2.3rem;
     line-height: 3.3rem;
     letter-spacing: -0.02em;
 }
-.visual-slide button{
+.web-box-con button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 23rem;
     width: 100%;
     padding: 1.6rem 3.1rem;
@@ -133,4 +191,67 @@ header ul li:hover::after{
     color:#fff;
     border: 0.1rem solid #FFFFFF;
     border-radius: 1rem;
+    transition: all 0.3s ease 0s;
+}
+.web-box-con button img{
+    width: 3.5rem;
+    object-fit: contain;
+    transition: all 0.3s ease 0s;
+}
+.web-box-con button:hover{
+    color:#00D67A;
+    border-color: #00D67A;
+}
+.web-box-con button:hover img{
+    filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
+}
+
+/* works */
+.works{
+    height: 115.5rem;
+}
+
+/* o-serv */
+.o-serv{
+}
+.o-serv .innerframe-1700{
+    display: flex;
+}
+.main-con-l{
+    width: 59.5rem;
+}
+.main-con-r{
+    position: relative;
+    flex:1;
+    border-left: 0.1rem solid #777;;
+}
+.o-serv .main-con-r{
+    display: flex;
+    justify-content: flex-end;
+}
+.o-serv-box{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    padding: 7rem 0;
+}
+.o-serv-box div{
+    width: calc(50% - 2rem);
+    height: 40rem;
+    margin-right: 4rem;
+    padding: 5rem 4rem;
+    background: rgba(85, 85, 85, 0.3);
+}
+.o-serv-box div:first-of-type{
+    margin-bottom: 4rem;
+}
+.o-serv-box div:nth-of-type(2n){
+    margin-right: 0;
+}
+.o-serv-box p{
+    margin-top: 6rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: -0.02em;
 }
