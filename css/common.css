@@ -4,6 +4,17 @@
   color:#fff;
   font-size: 2rem;
   font-weight: 400;
+  border:1rem solid #00D67A;
+}
+html{
+  font-family: 'Gmarket Sans';
+  font-size: 10px;
+}
+.innerframe-1700{
+  max-width: 170rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 .inner-ty1 {
   display: flex;
@@ -73,23 +84,35 @@
   color: #00D67A;
 }
 .client-info {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10rem;
   width: 100%;
 }
 .client-info > li {
-  width: calc(100% / 2);
+  margin-top: 3rem;
+  width: calc(100% / 2 - 2.8rem);
+}
+.client-info > li:nth-child(-n + 2) {
+  margin-top: 0;
+}
+.client-info > li:nth-child(5) {
+  width: 100%;
 }
 .client-info > li:nth-child(2n) {
   margin-left: 5.6rem;
 }
-.client-info input[type=text] {
+.client-info input {
   padding: 2.4rem 1.4rem;
+  width: 100%;
+  font-weight: 300;
+  font-size: 2rem;
+  transform:rotate(-0.03deg);
+  color: #FFFFFF;
   background: transparent;
   border-width: 0 0 1px 0;
   border-bottom-color: #FFFFFF;
 }
-.client-info input[type=text]::placeholder {
-  font-weight: 300;
-  font-size: 2rem;
+.client-info input::placeholder {
   color: #FFFFFF;
 }
