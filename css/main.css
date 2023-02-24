@@ -103,7 +103,7 @@ header ul li:hover::after{
 .menu-wrap button{
     width: 3.5rem;
     height: 2.4rem;
-    background: url(../img/btn-menu.png) no-repeat 0 0 /contain;
+    background: url(../imgaes/btn-menu.png) no-repeat 0 0 /contain;
 }
 
 /* 비쥬얼 */
