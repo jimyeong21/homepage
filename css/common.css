@@ -1,10 +1,15 @@
 /* css */
 .wrap{
+  position: relative;
   background: #111;
   color:#fff;
   font-size: 2rem;
   font-weight: 400;
   border:1rem solid #00D67A;
+  /* cursor: none; */
+}
+button,a{
+  cursor: none;
 }
 ::selection{
   background: #00D67A;
@@ -12,6 +17,15 @@
 html{
   font-family: 'Gmarket Sans';
   font-size: 10px;
+}
+#deco-pointer{
+  /*마우스 커서  */
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  background: url(../images/ico-pointer.png) no-repeat 0 0 /contain;
+  z-index: 101;
 }
 .innerframe-1700{
   max-width: 170rem;
