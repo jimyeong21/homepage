@@ -237,3 +237,6 @@ html{
   margin: 0 auto;
   max-width: 170rem;
 }
+.location > address {
+  margin-bottom: 3rem;
+}
