@@ -56,6 +56,27 @@
           <button>WE WORKS <img src="./images/ico-right.png" alt="바로가기"></button>
         </div>
       </div>
+      <div class="visu-txtimg-box">
+        <div class="img-visu01">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+        </div>
+        <div class="img-visu02">
+          <img src="./images/bg-visu02.png" alt="faidems8">
+          <img src="./images/bg-visu02.png" alt="faidems8">
+          <img src="./images/bg-visu02.png" alt="faidems8">
+          <img src="./images/bg-visu02.png" alt="faidems8">
+        </div>
+        <div class="img-visu01 img-visu03">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+          <img src="./images/bg-visu01.png" alt="faidems8">
+        </div>
+      </div>
+      <button class="btn-vi-under"><img src="./images/img-main-bottom.png" alt="아래로"></button>
     </div>
     <div class="works">
       <div class="innerframe-1700">
@@ -199,9 +220,21 @@
       $('.show-side').click(function(){
         $('.side-menu').show();
       })
-    })
-    $('.btn-menu-close').click(function(){
-      $('.side-menu').hide();
+      $('.btn-menu-close').click(function(){
+        $('.side-menu').hide();
+      })
+      // top btn
+      $(window).scroll(function () {
+	    	if ($(this).scrollTop() > 300) {
+	    		$('.btn-top').fadeIn(300);
+	    	} else {
+	    		$('.btn-top').fadeOut(300);
+	    	}
+	    });
+	    $('.btn-top').click(function (event) {
+	    	event.preventDefault();
+	    	$('html, body').animate({ scrollTop: 0 }, 300);
+	    });
     })
     //works slide
     const swiper = new Swiper('.works-slide-wrap', {

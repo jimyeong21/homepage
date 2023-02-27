@@ -117,6 +117,17 @@ header ul li:hover::after{
 }
 
 /* 비쥬얼 */
+@keyframes vi-under-btn{
+    0%{
+        bottom: 8.3rem;
+    }
+    50%{
+        bottom: 9.3rem;
+    }
+    100%{
+        bottom: 8.3rem;
+    }
+}
 .visual{
     position: relative;
     height: 99.6rem;
@@ -129,6 +140,7 @@ header ul li:hover::after{
     min-height: 40.3rem;
     width: 100%;
     transform: translate(-50%,-50%);
+    z-index: 2;
 }
 .web-box::after{
     position: absolute;
@@ -214,6 +226,71 @@ header ul li:hover::after{
 }
 .web-box-con button:hover img{
     filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
+}
+.btn-vi-under{
+    position: absolute;
+    left: 50%;
+    bottom: 8.3rem;
+    width: 6rem;
+    height: 9rem;
+    transform: translateX(-50%);
+}
+.btn-vi-under:hover{
+    animation: vi-under-btn 1.2s linear infinite
+}
+@keyframes visual-txt-img{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes visual-txt-img2{
+    0%{
+        transform: translateY(-50%) translateX(-50%);
+    }
+    100%{
+        transform: translateY(-50%) translateX(0%);
+    }
+}
+/* 아래로 버튼 */
+.btn-vi-under img{
+    width: 100%;
+    object-fit: contain;
+}
+/* 비쥬얼 배경 */
+.visu-txtimg-box img{
+    height: 100%;
+    object-fit: contain;
+}
+.img-visu01{
+    display: flex;
+    position: absolute;
+    top:13rem;
+    height: 7.3rem;
+    animation: visual-txt-img 10s linear infinite;
+}
+.img-visu02{
+    display: flex;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    animation: visual-txt-img2 10s linear infinite;
+}
+.img-visu02 img{
+    width: 290rem;
+    max-width: 150%;
+}
+.img-visu02 p{
+    height: 11.1rem;
+}
+.img-visu03{
+    display: flex;
+    position: absolute;
+    top:unset;
+    bottom:15.4rem
 }
 
 /* works */
@@ -408,10 +485,10 @@ header ul li:hover::after{
 }
 .add-wrap p{
     display: flex;
+    white-space: nowrap;
     align-items: center;
-    width: 247%;
     height: 100%;
-    animation: email-txt 60s linear infinite;
+    animation: email-txt 20s linear infinite;
 }
 .add-wrap span{
     display: flex;
@@ -421,6 +498,7 @@ header ul li:hover::after{
     height: 6rem;
     margin-left: 4rem;
     margin-right: 2.2rem;
+    padding: 0 1.2rem;
     padding-top: 1rem;
     background: #fff;
     font-weight: 400;
