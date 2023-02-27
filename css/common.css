@@ -255,7 +255,7 @@ html{
   align-items: center;
 }
 .history > li > span {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 7rem;
 }
 .history > li > p {
