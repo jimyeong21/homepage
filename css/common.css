@@ -6,6 +6,9 @@
   font-weight: 400;
   border:1rem solid #00D67A;
 }
+::selection{
+  background: #00D67A;
+}
 html{
   font-family: 'Gmarket Sans';
   font-size: 10px;
