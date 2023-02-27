@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/jquery-3.6.1.min.js"></script>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -22,7 +23,7 @@
         <li><a href="javascript:void(0)">PORTFOLIO</a></li>
         <li><a href="javascript:void(0)">CONTACT</a></li>
       </ul>
-      <button class="btn-menu-close"></button>
+      <button class="btn-menu-close"><img src="./images/ico-close.png" alt="닫기"></button>
     </div>
     <header>
       <div class="innerframe-1700">
@@ -33,7 +34,7 @@
             <li><a href="javascript:void(0)">PORTFOLIO</a></li>
             <li><a href="javascript:void(0)">CONTACT</a></li>
           </ul>
-          <button></button>
+          <button class="show-side"></button>
         </div>
       </div>
     </header>
@@ -193,6 +194,16 @@
     <button class="btn-top"></button>
   </div>
   <script>
+    //menubtn
+    $(document).ready(function(){
+      $('.show-side').click(function(){
+        $('.side-menu').show();
+      })
+    })
+    $('.btn-menu-close').click(function(){
+      $('.side-menu').hide();
+    })
+    //works slide
     const swiper = new Swiper('.works-slide-wrap', {
     direction: 'horizontal',
     spaceBetween: 40, 
@@ -206,6 +217,7 @@
     },
 
   });
+
   </script>
 </body>
 </html>
