@@ -103,7 +103,7 @@ header ul li:hover::after{
 .menu-wrap button{
     width: 3.5rem;
     height: 2.4rem;
-    background: url(../imgaes/btn-menu.png) no-repeat 0 0 /contain;
+    background: url(../images/btn-menu.png) no-repeat 0 0 /contain;
 }
 
 /* 비쥬얼 */
@@ -236,11 +236,14 @@ header ul li:hover::after{
     padding: 7rem 0;
 }
 .o-serv-box div{
+    position: relative;
     width: calc(50% - 2rem);
     height: 40rem;
     margin-right: 4rem;
     padding: 5rem 4rem;
     background: rgba(85, 85, 85, 0.3);
+    border: 0.1rem solid  rgba(85, 85, 85, 0.3);
+    transition: all 0.3s ease 0s;
 }
 .o-serv-box div:first-of-type{
     margin-bottom: 4rem;
@@ -248,10 +251,136 @@ header ul li:hover::after{
 .o-serv-box div:nth-of-type(2n){
     margin-right: 0;
 }
+.o-serv-box a{
+    display: inline-block;
+    position: absolute;
+    right: 4.4rem;
+    bottom: 5.5rem;
+    width: 5rem;
+    height: 5rem;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+.o-serv-box a img{
+    object-fit: contain;
+}
 .o-serv-box p{
     margin-top: 6rem;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 3rem;
     letter-spacing: -0.02em;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.o-serv-box div:hover{
+    border: 0.1rem solid #00D67A;
+}
+.o-serv-box div:hover a{
+    opacity: 0;
+    pointer-events: none;
+}
+.o-serv-box div:hover p{
+    opacity: 1;
+}
+
+/* add-wrap */
+@keyframes email-txt {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+.add-wrap{
+    align-items: center;
+    height: 10rem;
+    overflow: hidden;
+}
+.add-wrap p{
+    display: flex;
+    align-items: center;
+    width: 247%;
+    height: 100%;
+    animation: email-txt 60s linear infinite;
+}
+.add-wrap span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: 6rem;
+    margin-left: 4rem;
+    margin-right: 2.2rem;
+    padding-top: 1rem;
+    background: #fff;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.02em;
+    color: #111;;
+}
+.add-wrap a{
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+/* contact-us */
+.contact-us{
+    height: 58.9rem;
+}
+.contact-us .innerframe-1700{
+    display: flex;
+}
+.contact-us .web-box{
+    max-width: 76rem;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.4rem 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+}
+footer li{
+    position: relative;
+    margin-right: 3rem;
+}
+footer li:after{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    right: -1.5rem;
+    width: 0.1rem;
+    height: 1.3rem;
+    transform: translateY(-50%);
+    background: #fff;
+    content: "";
+}
+footer li:last-of-type{
+    margin-right: 0;
+}
+footer li:last-of-type::after{
+    display: none;
+}
+footer p{
+    text-align: center;
+}
+.btn-top{
+    position: fixed;
+    bottom:10rem;
+    right: 11rem;
+    width: 6.2rem;
+    height: 9.2rem;
+    background: url(../images/img-main-top.png) no-repeat 0 0 /contain;
 }
