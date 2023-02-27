@@ -1,15 +1,16 @@
 /* css */
+body {
+  cursor: url(../images/ico-pointer.png), auto !important;
+}
 .wrap{
-  position: relative;
   background: #111;
   color:#fff;
   font-size: 2rem;
   font-weight: 400;
   border:1rem solid #00D67A;
-  /* cursor: none; */
 }
 button,a{
-  cursor: none;
+  cursor: url(../images/ico-pointer.png), auto !important;
 }
 ::selection{
   background: #00D67A;
@@ -18,15 +19,17 @@ html{
   font-family: 'Gmarket Sans';
   font-size: 10px;
 }
-#deco-pointer{
-  /*마우스 커서  */
+/*마우스 커서  */
+/* #deco-pointer{
   position: absolute;
   width: 3.5rem;
   height: 3.5rem;
+  left: 0;
+  top: 0;
   border: none;
   background: url(../images/ico-pointer.png) no-repeat 0 0 /contain;
   z-index: 101;
-}
+} */
 .innerframe-1700{
   max-width: 170rem;
   width: 100%;
