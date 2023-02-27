@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/jquery-3.6.1.min.js"></script>
+  <title>FAIDEMS8</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="portfolio">
+      <h2 class="tit01">&lt; Portfolio / &gt;</h2>
+      <p class="tit-desc">
+        (주)파이뎀스에잇의 홈페이지, 애플리케이션, 키오스크 등<br>
+        멀티 플랫폼에 대한 다양한 레퍼런스를 만나 보세요.
+      </p>
+
+      <ul class="tab-list">
+        <li class="active"><a href="#n">전체</a></li>
+        <li><a href="#n">웹사이트</a></li>
+        <li><a href="#n">반응형 웹</a></li>
+        <li><a href="#n">애플리케이션(App)</a></li>
+        <li><a href="#n">시스템</a></li>
+        <li><a href="#n">키오스크</a></li>
+        <li><a href="#n">기타</a></li>
+      </ul>
+
+      <div class="tab-con">
+        <ul class="work-list">
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="아주대학교 인사평가시스템">
+              <p class="work-name">아주대학교 인사평가시스템</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="뷔페 식단 예약 앱">
+              <p class="work-name">뷔페 식단 예약 앱</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="한국체육대학교 대표 홈페이지">
+              <p class="work-name">한국체육대학교 대표 홈페이지</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="SMART 밴딩머신">
+              <p class="work-name">SMART 밴딩머신</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="아주대학교 인사평가시스템">
+              <p class="work-name">아주대학교 인사평가시스템</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="뷔페 식단 예약 앱">
+              <p class="work-name">뷔페 식단 예약 앱</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="한국체육대학교 대표 홈페이지">
+              <p class="work-name">한국체육대학교 대표 홈페이지</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+          <li>
+            <a href="#n">
+              <img src="../images/img-portfolio.png" alt="SMART 밴딩머신">
+              <p class="work-name">SMART 밴딩머신</p>
+              <span class="btn-more">MORE veiw</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    // Tab
+    $(".tab-list li").on("click", function () {
+      let idxN = $(this).index();
+      $(".tab-list li").removeClass("active");
+      $(".tab-list li a").attr("title", "");
+      $(this).addClass("active");
+      $(this).children().attr("title", "선택된 탭");
+      $(".tab-con").removeClass("active");
+      $(".tab-con").eq(idxN).addClass("active");
+    });
+
+  </script>
+</body>
+</html>

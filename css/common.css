@@ -29,6 +29,27 @@ html{
   height: 100%;
   border-top: 1px solid #777;
 }
+.tab-list {
+  display: flex;
+  margin: 9rem 0 3rem 0;
+}
+.tab-list > li {
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+.tab-list > li > a {
+  display: block;
+  padding: 1.5rem 3rem;
+}
+.tab-list > li.active {
+  font-weight: 500;
+  color: #000;
+  border: none;
+  background: #00D67A;
+}
+.tab-list > li + li {
+  margin-left: 2rem;
+}
 .fw-300 {
   font-weight: 300 !important;
 }
@@ -213,6 +234,7 @@ html{
   color: #000;
   background: #fff;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .file-area .file-add + input {
   display: none;
@@ -263,4 +285,54 @@ html{
   padding: 2.4rem 1.1rem;
   width: 100%;
   border-bottom: 1px solid #FFFFFF;
+}
+.portfolio {
+  margin: 0 auto;
+  padding: 13.6rem 0;
+  max-width: 170rem;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.3rem;
+}
+.work-list > li {
+  display: flex;
+  margin-top: 9rem;
+  width: calc(100% / 4 - 3.3rem);
+}
+.work-list > li:nth-child(-n + 4) {
+  margin-top: 0;
+}
+.work-list > li > a > img {
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+.work-list > li > a:hover > img {
+  filter: grayscale(0);
+}
+.work-list > li > a > .btn-more {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+.work-list > li > a > .btn-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 0.1rem;
+  width: 0;
+  transition: all 0.5s ease-in-out;
+}
+.work-list > li > a:hover > .btn-more::after {
+  width: 100%;
+  background: #00D67A;
+}
+.work-list .work-name {
+  margin: 3rem 0 1.8rem;
+  font-weight: 500;
+  font-size: 3rem;
 }
