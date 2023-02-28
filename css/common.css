@@ -92,6 +92,7 @@ html{
   margin-bottom: 3rem;
   font-size: 5rem;
   font-weight: 500;
+  line-height: 6rem;
 }
 .sub-tit {
   display: block;
@@ -409,5 +410,5 @@ html{
   margin-top: 2rem;
 }
 .work-page .bottom-area {
-  
+
 }
