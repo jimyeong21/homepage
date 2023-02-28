@@ -139,6 +139,9 @@ html{
 .contact-list > li {
   display: flex;
 }
+.contact-list > li + li {
+  margin-top: 0.8rem;
+}
 .contact-list > li .c-tit {
   margin-right: 0.8rem;
   font-weight: 500;
@@ -222,23 +225,47 @@ html{
 .project-info {
   display: flex;
 }
-.project-info > li {
+.project-info > div {
   width: calc(100% / 2);
 }
-.project-info > li + li {
+.project-info > div + div {
   margin-left: 5.6rem;
 }
-.project-info .selbox {
-  padding: 2.4rem 1.4rem;
+.project-info .selectbox {
+  position: relative;
   width: 100%;
-  font-weight: 300;
   font-size: 2rem;
-  transform:rotate(-0.03deg);
   color: #FFFFFF;
-  background: transparent;
-  border-width: 0 0 0.1rem 0;
-  border-bottom-color: #FFFFFF;
+  transform:rotate(-0.03deg);
 }
+.project-info .selectbox .selected {
+  padding: 2.4rem 5rem 2.4rem 1.4rem;
+  font-weight: 300;
+  border-bottom: 0.1rem solid #fff;
+  background: url(../images/ico-select-arrow.png) no-repeat right 1.5rem center / 1.8rem 1rem;
+}
+.project-info .selectbox > ul {
+  display: none;
+  position: absolute;
+  padding: 1rem 1.4rem;
+  width: 100%;
+  border-width: 0 0.1rem 0.1rem 0.1rem;
+  border-style: solid;
+  border-color: #fff;
+  background: #111;
+  z-index: 10;
+}
+.project-info .selectbox .option {
+  padding: 0.85rem 0;
+  font-size: 1.6rem;
+}
+/* .project-info .selectbox {
+  padding: 8.5rem 1.4rem;
+  font-family: "Gmarket sans";
+  font-size: 1.4rem;
+  border: 1px solid #FFFFFF;
+  background: #111111;
+} */
 .desc-ex {
   margin-left: 1.5rem;
   color: #777;
@@ -265,9 +292,11 @@ html{
   margin-top: 3rem;
 }
 .file-area .file-add {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
+  min-width: 18rem;
   font-weight: 500;
   color: #000;
+  text-align: center;
   background: #fff;
   border-radius: 1rem;
   cursor: pointer;
@@ -275,9 +304,37 @@ html{
 .file-area .file-add + input {
   display: none;
 }
-.file-area .file-desc {
+.file-list {
+  display: flex;
   margin-left: 1.5rem;
+  padding-bottom: 0.8rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #fff;
+}
+.file-list > li {
+  display: flex;
+  position: relative;
+  padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+  border: 0.1rem solid #fff;
+  border-radius: 1rem;
+}
+.file-list .file-name {
   font-size: 1.6rem;
+}
+.file-list .file-delete {
+  position: absolute;
+  right: 1.5rem;
+}
+.file-list .file-delete img {
+  margin-top: 0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.file-desc {
+  margin: 1.5rem 0 0 0;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  background: url(../images/ico-file-desc.png) no-repeat left top / 1.46rem 1.41rem;
 }
 .btn-area {
   display: flex;
@@ -285,12 +342,19 @@ html{
   margin-top: 10.8rem;
 }
 .btn-send {
-  padding-right: 18rem;
+  position: relative;
+  padding-right: 23rem;
   font-size: 6rem;
   font-weight: 500;
   color: #fff;
+  background: url(../images/btn-send.png) no-repeat right 5rem center;
+  background-size: 15rem 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn-send:hover {
   background: url(../images/btn-send.png) no-repeat right center;
   background-size: 15rem 2.5rem;
+  filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
 }
 .location {
   margin: 0 auto;
