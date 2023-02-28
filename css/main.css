@@ -248,7 +248,7 @@ header ul li:hover::after{
 }
 @keyframes visual-txt-img2{
     0%{
-        transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-100%);
     }
     100%{
         transform: translateY(-50%) translateX(0%);
@@ -277,7 +277,7 @@ header ul li:hover::after{
     top:50%;
     right: 0;
     transform: translateY(-50%);
-    animation: visual-txt-img2 10s linear infinite;
+    animation: visual-txt-img2 19s linear infinite;
 }
 .img-visu02 img{
     width: 290rem;
