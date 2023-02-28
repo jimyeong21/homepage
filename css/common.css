@@ -366,3 +366,10 @@ html{
   font-weight: 500;
   font-size: 3rem;
 }
+.work-page {
+  margin: 0 auto 10rem;
+  max-width: 170rem;
+  border-width: 0 0.1rem 0.1rem 0.1rem;
+  border-style: solid ;
+  border-color: #777;
+}
