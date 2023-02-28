@@ -474,6 +474,36 @@ html{
   margin-top: 2rem;
   line-height: 3rem;
 }
-.work-page .bottom-area {
-
+.work-page .work-img {
+  position: relative;
+  padding: 7rem 12.5rem;
+  border-top: 0.1rem solid #777;
+  z-index: 1;
+}
+.work-img.pc::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7rem;
+  left: 12.5rem;
+  right: 12.5rem;
+  height: 85.7rem;
+  border: 0.1rem solid #fff;
+  border-radius: 1.5rem;
+  z-index: -1;
+}
+.work-img.pc .img-box {
+  margin: 2.5rem  2.5rem auto  2.5rem;
+  max-width: 140rem;
+}
+.work-img.mobile .img-box{
+  margin: 0 auto;
+  max-width: 132.5rem;
+}
+.work-img.sub .img-box{
+  margin: 0 auto;
+  max-width: 140rem;
+}
+.work-img .img-box img {
+  width: 100%;
 }
