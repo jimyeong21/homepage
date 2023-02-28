@@ -195,6 +195,7 @@ html{
   border-bottom-color: #FFFFFF;
 }
 .client-info input::placeholder {
+  font-family: "Gmarket sans";
   color: #FFFFFF;
 }
 .project-type {
