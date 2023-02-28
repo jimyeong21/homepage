@@ -93,6 +93,11 @@ html{
   font-size: 5rem;
   font-weight: 500;
 }
+.sub-tit {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
 .tit-desc {
   line-height: 3rem;
 }
@@ -372,4 +377,37 @@ html{
   border-width: 0 0.1rem 0.1rem 0.1rem;
   border-style: solid ;
   border-color: #777;
+}
+.work-page .top-area {
+  display: flex;
+}
+.work-page .top-area > div {
+  padding: 8.5rem 7.5rem;
+  width: calc(100% / 2);
+}
+.work-page .top-area .left {
+  border-right: 0.1rem solid #777;
+}
+.work-page .top-area .work-info {
+  display: flex;
+}
+.work-page .top-area .work-info > li {
+  width: calc(100% / 3);
+  text-align: left;
+}
+.work-page .top-area .work-tit {
+  font-size: 2.5rem;
+}
+.work-page .top-area .work-info > li > p {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.work-page .top-area .work-cont {
+  margin-top: 8rem;
+}
+.work-page .top-area .work-cont > p {
+  margin-top: 2rem;
+}
+.work-page .bottom-area {
+  
 }
