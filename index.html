@@ -247,7 +247,7 @@
     //works slide
     const swiper = new Swiper('.works-slide-wrap', {
     direction: 'horizontal',
-    spaceBetween: 40, 
+    spaceBetween: 15, 
     slidesPerView : 'auto',
     pagination: {
       el: '.work-pagination',
@@ -256,7 +256,11 @@
     navigation: {
       nextEl: '.work-next',
     },
-
+    breakpoints:{
+      768:{
+        spaceBetween:40,
+      }
+    }
   });
 
   </script>
