@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/jquery-3.6.1.min.js"></script>
   <title>FAIDEMS8</title>
 </head>
 <body>
@@ -22,11 +23,11 @@
         <ul class="contact-list">
           <li>
             <span class="c-tit">T.</span>
-            <a href="mailto:CASIOPIA@FAIDEMS8.COM" class="c-tel">+070-4066-2410</a>
+            <a href="tel:070-4066-2410" class="c-tel">+070-4066-2410</a>
           </li>
           <li>
             <span class="c-tit">E.</span>
-            <a href="mailto:CASIOPIA@FAIDEMS8.COM" class="c-mail">CASIOPIA@FAIDEMS8.COM</a>
+            <a href="mailto:casiopia@faidems8.com" class="c-mail">casiopia@faidems8.com</a>
           </li>
         </ul>
       </div>
@@ -131,18 +132,32 @@
             <img class="required" src="../images/ico-required.png" alt="필수입력정보">
           </p>
         </div>
-        <ul class="project-info">
-          <li>
-            <select class="selbox">
-              <option>예산 선택</option>
-            </select>
-          </li>
-          <li>
-            <select class="selbox">
-              <option>일정 선택</option>
-            </select>
-          </li>
-        </ul>
+        <div class="project-info">
+          <div class="selectbox">
+            <div class="selected">
+              <div class="selected-value">예산 선택</div>
+            </div>
+            <ul>
+              <li class="option">1억 미만</li>
+              <li class="option">1억 ~ 3억 원</li>
+              <li class="option">3억 ~ 5억 원</li>
+              <li class="option">5억 ~ 10억 원</li>
+              <li class="option">10억 이상</li>
+            </ul>
+          </div>
+          <div class="selectbox">
+            <div class="selected">
+              <div class="selected-value">일정 선택</div>
+            </div>
+            <ul>
+              <li class="option">3 개월 이내</li>
+              <li class="option">3 ~ 5 개월</li>
+              <li class="option">6 ~ 9 개월</li>
+              <li class="option">9 개월 이상</li>
+              <li class="option">기타</li>
+            </ul>
+          </div>
+        </div>
         
         <div class="mt-60">
           <em>프로젝트 내용 입력</em>
@@ -153,8 +168,16 @@
         <div class="file-area">
           <label for="file" class="file-add">파일 첨부하기</label>
           <input id="file" type="file">
-          <p class="file-desc">pdf, ppt, word, excel, jpg, png 등 2 개까지 업로드 가능 (최대 00MB)</p>
+          <ul class="file-list">
+            <li>
+              <p class="file-name">파일제목a.ppt</p>
+              <a class="file-delete" href="#n">
+                <img src="../images/ico-file-delete.png" alt="파일 삭제하기">
+              </a>
+            </li>
+          </ul>
         </div>
+        <p class="file-desc">pdf, ppt, word, excel, jpg, png 등 2 개까지 업로드 가능 (최대 00MB)</p>
         <!--//  part 3 -->
         <div class="btn-area">
           <button type="submit" class="btn-send">Send</button>
@@ -176,6 +199,14 @@
       "key" : "2dvd7",
       "mapHeight" : "500"
     }).render();
+
+    $(".selected").on("click",function(){
+      if($(this).siblings("ul").is(":hidden")){
+        $(this).siblings("ul").show();
+      }else{
+        $(this).siblings("ul").hide();
+      }
+    });
   </script>
 </body>
 </html>
