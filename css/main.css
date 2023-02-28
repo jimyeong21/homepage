@@ -567,6 +567,7 @@ footer p{
     text-align: center;
 }
 .btn-top{
+    display: none;
     position: fixed;
     bottom:10rem;
     right: 11rem;
@@ -660,4 +661,102 @@ footer p{
 .side-menu button img{
     width: 100%;
     object-fit: contain;
+}
+@media (max-width:768px) {
+    .wrap{
+        border: 0.5rem solid #00D67A;
+    }
+    .wrap>div .innerframe-1700{
+        padding: 0 2rem;
+    }
+    /* 헤더 */
+    header{
+        padding: 0 1.5rem;
+    }
+    header .main-logo{
+        width: 14rem;
+        height: auto;
+    }
+    .menu-wrap ul{
+        display: none;
+    }
+    .menu-wrap button{
+        width: 2.8rem;
+        height: 2rem;
+    }
+    /* 비쥬얼 */
+    @keyframes visual-txt-img3{
+        0%{
+            transform: translateX(-50%);
+        }
+        100%{
+            transform:  translateX(0%);
+        }
+    }
+    .visual{
+        height: auto;
+        padding-top: 12.5rem;
+        padding-bottom: 24.1rem;
+    }
+    .web-box{
+        position: relative;
+        top:unset;
+        left:2rem;
+        min-height: unset;
+        width: calc(100% - 4.8rem);
+        transform: unset;
+    }
+    .web-box-tit{
+        height: 5.3rem;
+        padding: 0 1.6rem;
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+    }
+    .web-box-tit .deco div{
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+    }
+    .web-box-con{
+        min-height: unset;
+        padding: 5.4rem 3.4rem 0;
+    }
+    .web-box-con P{
+        padding-right: 1.3rem;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+    .web-box-con button{
+        margin-bottom: 6.5rem;
+        padding: 1.3rem 3.1rem 1.2rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .web-box-con button img{
+        width: 3.4rem;
+        margin-left: 0.5rem;
+    }
+    .img-visu01 img{
+        max-width: unset;
+    }
+    .img-visu01{
+        top:5.5rem;
+        height: 3.1rem;
+        animation: visual-txt-img 40s linear infinite;
+    }
+    .img-visu02{
+        top: unset;
+        bottom: 18.2rem;
+        height: 4.4rem;
+        animation: visual-txt-img3 5s linear infinite;
+        transform: unset;
+    }
+    .img-visu02 img{
+        max-width: 400%;
+    }
+    .img-visu03{
+        top:unset;
+        bottom: 10.6rem;
+    }
+
 }
