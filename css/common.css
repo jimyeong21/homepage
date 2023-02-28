@@ -79,6 +79,9 @@ html{
 .fw-700 {
   font-weight: 700 !important;
 }
+.mt-50 {
+  margin-top: 5rem !important;
+}
 .mt-60 {
   margin-top: 6rem !important;
 }
@@ -105,6 +108,13 @@ html{
   color:#fff;
   border: 0.1rem solid #FFFFFF;
   border-radius: 1rem;
+  background: url(../images/ico-right.png) no-repeat right 3rem center / 3.4rem 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn-line-white:hover{
+  color:#00D67A;
+  border-color: #00D67A;
+  filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
 }
 .left-box {    
   padding: 13.6rem 10rem 13.6rem 0 ;
