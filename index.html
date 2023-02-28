@@ -236,6 +236,13 @@
 	    	event.preventDefault();
 	    	$('html, body').animate({ scrollTop: 0 }, 300);
 	    });
+
+      //works top 으로 이동
+      let workTop=$('.works').offset().top;
+      console.log(workTop)
+      $('.btn-vi-under').click(function(){
+        $('body,html').animate({scrollTop:workTop - 137},400)
+      })
     })
     //works slide
     const swiper = new Swiper('.works-slide-wrap', {
