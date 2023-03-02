@@ -462,6 +462,7 @@ h2{
 /* contact-us */
 .contact-us{
     height: 58.9rem;
+    border-bottom: none !important;
 }
 .contact-us .innerframe-1700{
     display: flex;

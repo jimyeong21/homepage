@@ -658,6 +658,7 @@ footer{
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.6rem;
+  border-top: 0.1rem solid #777;
 }
 footer ul{
   display: flex;
