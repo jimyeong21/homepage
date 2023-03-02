@@ -325,7 +325,8 @@ html{
 }
 .file-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;    
+  gap: 1.5rem;
   margin-left: 1.5rem;
   padding-bottom: 0.8rem;
   width: 100%;
