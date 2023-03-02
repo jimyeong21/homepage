@@ -1,6 +1,13 @@
 // 공통
-// top btn
 $(document).ready(function(){
+    //menubtn
+    $('.show-side').click(function(){
+        $('.side-menu').show();
+    })
+    $('.btn-menu-close').click(function(){
+        $('.side-menu').hide();
+    })
+    // top btn
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.btn-top').fadeIn(300);
