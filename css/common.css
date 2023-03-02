@@ -3,11 +3,12 @@ body {
   cursor: url(../images/ico-pointer.png), auto !important;
 }
 .wrap{
-  background: #111;
   color:#fff;
   font-size: 2rem;
   font-weight: 400;
+  line-height: 3rem;
   border:1rem solid #00D67A;
+  background: #111;
 }
 button,a{
   cursor: url(../images/ico-pointer.png), auto !important;
@@ -156,6 +157,7 @@ html{
 .request-tit > p {
   margin-top: 1.5rem;
   font-size: 2.4rem;
+  line-height: 3rem;
 }
 .request-tit .required {
   display: inline-block;
@@ -211,8 +213,8 @@ html{
   border-radius: 1rem;
   cursor: pointer;
 }
-.project-type > li + li {
-  margin-left: 2rem;
+.project-type > li {
+  margin-right: 2rem;
 }
 .project-type > li > input[type=checkbox] {
   display: none;
@@ -507,4 +509,16 @@ html{
 }
 .work-img .img-box img {
   width: 100%;
+}
+
+@media (max-width:1400px) {
+  .inner-ty1 {
+    flex-direction: column;
+  }
+  .left-box, .right-box {
+    width: 100%;
+    padding:13.6rem 10rem 13.6rem 10rem;
+  }
+  .left-box {
+  }
 }
