@@ -53,78 +53,12 @@ h2{
     line-height: 3rem;
     letter-spacing: -0.02em;
 }
-header,.wrap>div{
+.wrap>div{
     border-bottom: 0.1rem solid #777;
 }
-.show-768{
-    display: none;
-}
-.show-1050{
-    display: none;
-}
 
-/* header */
-header{
-    padding: 0 1.5rem;
-}
-header .innerframe-1700{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8.4rem;
-}
-header .main-logo{
-    display: inline-block;
-    height: 2.4rem;
-}
-header .main-logo img{
-    height: 100%;
-    object-fit: contain;
-}
-.menu-wrap{
-    display: flex;
-}
-header ul{
-    display: flex;
-    margin-right: 6rem;
-}
-header ul li{
-    display: flex;
-    position: relative;
-    margin-right: 5rem;
-    transition: all 0.3s ease 0s;
-    align-items: center;
-}
-header ul li:last-of-type{
-    margin-right: 0;
-}
-header ul li a{
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-}
-header ul li::after{
-    display: inline-block;
-    position:absolute;
-    left:0;
-    bottom:0.2rem;
-    width: 0%;
-    height: 0.1rem;
-    background: #fff;
-    transition: all 0.3s ease 0s;
-    content: "";
-}
-header ul li:hover{
-    color:#00D67A;
-}
-header ul li:hover::after{
-    width: 100%;
-    background: #00D67A;
-}
-.menu-wrap button{
-    width: 3.5rem;
-    height: 2.4rem;
-    background: url(../images/btn-menu.png) no-repeat 0 0 /contain;
-}
+
+
 
 /* 비쥬얼 */
 @keyframes vi-under-btn{
@@ -536,144 +470,8 @@ header ul li:hover::after{
     max-width: 76rem;
 }
 
-/* footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4.4rem 0;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-}
-footer ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.6rem;
-}
-footer li{
-    position: relative;
-    margin-right: 3rem;
-}
-footer li:after{
-    display: inline-block;
-    position: absolute;
-    top:50%;
-    right: -1.5rem;
-    width: 0.1rem;
-    height: 1.3rem;
-    transform: translateY(-50%);
-    background: #fff;
-    content: "";
-}
-footer li:last-of-type{
-    margin-right: 0;
-}
-footer li:last-of-type::after{
-    display: none;
-}
-footer p{
-    text-align: center;
-}
-.btn-top{
-    display: none;
-    position: fixed;
-    bottom:10rem;
-    right: 11rem;
-    width: 6.2rem;
-    height: 9.2rem;
-    background: url(../images/img-main-top.png) no-repeat 0 0 /contain;
-    z-index: 4;
-}
-/* 옆 메뉴 */
-@keyframes main-bg-animation {
-    0% {
-      background-position: 1% 0%;
-    }
-    50% {
-      background-position: 99% 100%;
-    }
-    100% {
-      background-position: 1% 0%;
-    }
-}
-.side-menu{
-    display: none;
-    position: fixed;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(17, 17, 17, 0.8);
-    z-index: 100;
-}
-.side-menu ul{
-    position: absolute;
-    top:0;
-    right:0;
-    width: 50rem;
-    height: 100%;
-    padding: 9.8rem 5rem;
-    background-image: linear-gradient(315deg, #216749, #000000, #216749) !important;
-    background-size: 600% 600% !important;
-    animation: main-bg-animation 12s ease infinite !important;
-}
-.side-menu ul:after{
-    display: inline-block;
-    position: absolute;
-    right:0;
-    bottom:3.8rem;
-    width: 10rem;
-    height: calc(100% - 13.1rem);
-    background: url(../images/bg-sidemenu.png) no-repeat 100% 100% / contain;
-    content: "";
-}
-.side-menu li{
-    margin-bottom: 5rem;
-    font-weight: 500;
-    font-size: 4rem;
-    line-height: 4rem;
-    transition: all .3s ease 0s;
-}
-.side-menu li:last-of-type{
-    margin-bottom: 0;
-}
-.side-menu li:hover{
-    color:#00D67A
-}
-.side-menu a{
-    display: inline-block;
-    position: relative;
-}
-.side-menu a::after{
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: -0.2rem;
-    width: 0%;
-    height: 0.2rem;
-    background: #fff;
-    transition: all 0.3s ease 0s;
-    content: "";
-}
-.side-menu li:hover a::after{
-    width: 100%;
-    background: #00D67A;
-}
-.side-menu button{
-    position: absolute;
-    top:3rem;
-    right:5rem;
-    width: 2.4rem;
-    height: 2.4rem;
-}
-.side-menu button img{
-    width: 100%;
-    object-fit: contain;
-}
+
+
 @media (max-width:1740px){
     .wrap>div .innerframe-1700{
         padding: 0 2rem;
@@ -715,9 +513,6 @@ footer p{
     }
 }
 @media (max-width:1050px){
-    .show-1050{
-        display: block;
-    }
     /* 비쥬얼 */
     .web-box{
         transform: translateY(-50%);
@@ -727,25 +522,9 @@ footer p{
         min-height: unset;
         width: calc(100% - 4.8rem);
     }
-    /* 푸터 */
-    footer ul li:first-of-type,footer ul li:last-of-type{
-        display: none;
-    }
-    footer .show-1050{
-        margin-bottom: 0.8rem;
-    }
-    footer .footer-logo{
-        margin-bottom: 1.5rem;
-    }
-    /* top버튼 */
-    .btn-top{
-        right: 4rem;
-    }
+    
 }
 @media (max-width:768px) {
-    .show-768{
-        display: block;
-    }
     .wrap{
         border: 0.5rem solid #00D67A;
     }
@@ -759,18 +538,7 @@ footer p{
         font-size: 1.4rem;
         line-height: 2.2rem;
     }
-    /* 헤더 */
-    header .main-logo{
-        width: 14rem;
-        height: auto;
-    }
-    .menu-wrap ul{
-        display: none;
-    }
-    .menu-wrap button{
-        width: 2.8rem;
-        height: 2rem;
-    }
+    
     /* 비쥬얼 */
     @keyframes vi-under-btn{
         0%{
@@ -975,53 +743,5 @@ footer p{
         color: #00D67A;
         background: #111;
     }
-    footer{
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-    }
-    .footer-logo{
-        margin-bottom: 1.5rem;
-        font-weight: 400;
-        font-size: 1.3rem;
-        line-height: 1.3rem;
-    }
-    footer ul{
-        margin-bottom: 0.8rem;
-    }
-    footer li{
-        margin-right: 2rem;
-    }
-    footer li::after{
-        right: -1rem;
-        height: 1rem;
-    }
-    footer li:nth-of-type(3){
-        margin-right: 0;
-    }
-    footer li:nth-of-type(3)::after{
-        display: none;
-    }
-    /* top버튼 */
-    .btn-top{
-        right: 1.5rem;
-        width: 5rem;
-        height: 7.5rem;
-    }
-}
-@media (max-width:580px) {
-    /* 사이드 메뉴 */
-    .side-menu ul{
-        width: 100%;
-
-    }
-    .side-menu li{
-        font-size: 3.2rem;
-        line-height: 3.2rem;
-    }
-    .side-menu button{
-        top: 2.2rem;
-        right: 2.1rem;
-        width: 2rem;
-        height: 2rem;
-    }
+    
 }
