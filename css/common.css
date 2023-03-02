@@ -552,8 +552,23 @@ html{
     width: fit-content;
   }
 }
+@media (max-width:1260px) {
+  .work-page .top-area {
+    flex-direction: column;
+  }
+  .work-page .top-area > div {
+    width: 100%;
+  }
+  .work-page .top-area .left {
+    border-right: none;
+    border-bottom: 0.1rem solid #777;
+  }
+}
 
 @media (max-width:768px) {
+  .wrap {
+    border: 0.5rem solid #00D67A;
+  }
   .inner-ty2 {
     padding: 6rem 0;
   }
@@ -707,6 +722,65 @@ html{
   .location > address {
     font-size: 1.4rem;
     line-height: 2.2rem;
+  }
+  /* portfolio 상세페이지 */
+  .work-page .top-area > div {
+    padding: 6rem 1.5rem 4.5rem 1.5rem;
+  }
+  .sub-tit {
+    font-size: 1.8rem;
+  }
+  .tit01.work {
+    margin-bottom: -0.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .work-page .top-area .work-info {
+    flex-direction: column;
+    line-height: 2.2rem;
+  }
+  .work-page .top-area .work-info > li + li {
+    margin-top: 3rem;
+  }
+  .work-page .top-area .work-info > li > p {
+    margin-top: 1.5rem;
+  }
+  .work-page .top-area .work-tit {
+    font-size: 1.8rem;
+  }
+  .work-page .top-area .work-info > li {
+    width: 100%;
+  }
+  .work-page .top-area .work-info > li > p {
+    font-size: 1.4rem;
+  }
+  .work-page .top-area .work-cont {
+    margin-top: 3rem;
+  }
+  .work-page .top-area .work-cont > p {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  
+  .work-img.pc::after { 
+    top: 4.5rem;
+    left: 2rem;
+    right: 2rem;
+    height: 32.7rem;
+    border-radius: 1rem;
+  }
+  .work-page .work-img {
+    padding: 4.5rem 1.5rem;
+  }
+  .work-page .work-img.pc {
+    padding: 5.5rem 1.5rem 4.5rem 1.5rem;
+  }
+  .work-img.pc .img-box {
+    margin: 0 1.5rem;
+  }
+  .work-page {
+    border-width: 0 0 0.1rem 0;
   }
 }
 
