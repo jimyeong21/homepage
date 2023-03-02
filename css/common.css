@@ -477,6 +477,9 @@ html{
 .work-page .top-area .left {
   border-right: 0.1rem solid #777;
 }
+.work-page .top-area .left > .btn-line-white {
+  margin-top: 5rem;
+}
 .work-page .top-area .work-info {
   display: flex;
 }
@@ -724,7 +727,13 @@ html{
     line-height: 2.2rem;
   }
   /* portfolio 상세페이지 */
-  .work-page .top-area > div {
+  .work-page .top-area .left > .btn-line-white {
+    margin-top: 4.5rem;
+  }
+  .work-page .top-area > div:nth-child(1) {
+    padding: 6rem 1.5rem;
+  }
+  .work-page .top-area > div:nth-child(2) {
     padding: 6rem 1.5rem 4.5rem 1.5rem;
   }
   .sub-tit {
