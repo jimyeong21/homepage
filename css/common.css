@@ -575,6 +575,139 @@ html{
   .left-box, .right-box {
     padding: 6rem 2rem;
   }
+  .left-box {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .project-type {
+    gap: 1.5rem;
+  }
+  .project-type + .tit02  {
+    margin-top: 3.5rem;
+  }
+  .project-type + .request-tit  {
+    margin-top: 6rem;
+  }
+  .contact-list > li {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .contact-list > li + li {
+    margin-top: 0;
+  }
+  .contact-list > li .c-tit {
+    font-size: 1.5rem;
+  }
+  .request-tit .required {
+    width: 1rem;
+    height: 1rem;
+  }
+  .request-tit {
+    margin-bottom: 3rem;
+  }
+  .request-tit > p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .project-tit {
+    margin-top: 4.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .project-txt {
+    margin-top: 1.5rem;    
+    padding: 2.3rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .desc-ex {
+    margin-top: 1rem;
+  }
+  .btn-area {
+    justify-content: flex-start;
+    margin-top: 6rem;
+  }
+  .btn-send {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .project-type {
+    margin-top: 1.5rem;
+  }
+  .project-type > li > input[type="checkbox"] + label {
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  .project-info {
+    flex-direction: column;
+  }
+  .project-info > div + div {
+    margin-left: 0;
+  }
+  .project-info .selectbox .selected {
+    padding: 1.7rem 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  .project-info .selectbox > ul {
+    position: unset;
+  }
+  .project-info .selectbox .option {
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .client-info > li {
+    margin-top: 0;
+    width: 100%;
+  }
+  .client-info > li:nth-child(2n) {
+    margin-left: 0;
+  }
+  .client-info {
+    margin-bottom: 6rem;
+  }
+  .client-info input {
+    padding: 1.8rem 1.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .file-area {    
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .file-area .file-add {
+    padding: 1.2rem 1.6rem;
+    min-width: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  .file-list {
+    margin-top: 1.5rem;
+    margin-left: 0;
+    padding-bottom: 1.3rem;
+    gap: 1rem;
+  }
+  .file-list .file-name {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .file-list .file-delete img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .file-desc {
+    padding-left: 1.3rem;
+    line-height: 2.2rem;
+    background: url(../images/ico-file-desc.png) no-repeat left top / 1rem 1rem;
+  }
+  .location > address {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
 }
 
 /* 공통 */
@@ -872,138 +1005,5 @@ footer p{
       right: 2.1rem;
       width: 2rem;
       height: 2rem;
-  }
-  .left-box {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-  }
-  .project-type {
-    gap: 1.5rem;
-  }
-  .project-type + .tit02  {
-    margin-top: 3.5rem;
-  }
-  .project-type + .request-tit  {
-    margin-top: 6rem;
-  }
-  .contact-list > li {
-    margin-top: 0;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-  .contact-list > li + li {
-    margin-top: 0;
-  }
-  .contact-list > li .c-tit {
-    font-size: 1.5rem;
-  }
-  .request-tit .required {
-    width: 1rem;
-    height: 1rem;
-  }
-  .request-tit {
-    margin-bottom: 3rem;
-  }
-  .request-tit > p {
-    font-size: 1.5rem;
-    line-height: 2.4rem;
-  }
-  .project-tit {
-    margin-top: 4.4rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  .project-txt {
-    margin-top: 1.5rem;    
-    padding: 2.3rem 1.5rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  .desc-ex {
-    margin-top: 1rem;
-  }
-  .btn-area {
-    justify-content: flex-start;
-    margin-top: 6rem;
-  }
-  .btn-send {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-  .project-type {
-    margin-top: 1.5rem;
-  }
-  .project-type > li > input[type="checkbox"] + label {
-    padding: 1.2rem 1.6rem;
-    font-size: 1.6rem;
-    line-height: 1.5rem;
-  }
-  .project-info {
-    flex-direction: column;
-  }
-  .project-info > div + div {
-    margin-left: 0;
-  }
-  .project-info .selectbox .selected {
-    padding: 1.7rem 1.4rem;
-    font-size: 1.6rem;
-    line-height: 1.5rem;
-  }
-  .project-info .selectbox > ul {
-    position: unset;
-  }
-  .project-info .selectbox .option {
-    padding: 0.4rem 0;
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-  }
-  .client-info > li {
-    margin-top: 0;
-    width: 100%;
-  }
-  .client-info > li:nth-child(2n) {
-    margin-left: 0;
-  }
-  .client-info {
-    margin-bottom: 6rem;
-  }
-  .client-info input {
-    padding: 1.8rem 1.4rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  .file-area {    
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
-  }
-  .file-area .file-add {
-    padding: 1.2rem 1.6rem;
-    min-width: 1.3rem;
-    font-size: 1.6rem;
-    line-height: 1.5rem;
-  }
-  .file-list {
-    margin-top: 1.5rem;
-    margin-left: 0;
-    padding-bottom: 1.3rem;
-    gap: 1rem;
-  }
-  .file-list .file-name {
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-  }
-  .file-list .file-delete img {
-    width: 1.3rem;
-    height: 1.3rem;
-  }
-  .file-desc {
-    padding-left: 1.3rem;
-    line-height: 2.2rem;
-    background: url(../images/ico-file-desc.png) no-repeat left top / 1rem 1rem;
-  }
-  .location > address {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
   }
 }
