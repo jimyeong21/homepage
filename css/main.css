@@ -59,6 +59,9 @@ header,.wrap>div{
 .show-768{
     display: none;
 }
+.show-1050{
+    display: none;
+}
 
 /* header */
 header{
@@ -712,6 +715,9 @@ footer p{
     }
 }
 @media (max-width:1050px){
+    .show-1050{
+        display: block;
+    }
     /* 비쥬얼 */
     .web-box{
         transform: translateY(-50%);
@@ -720,6 +726,20 @@ footer p{
         left:2rem;
         min-height: unset;
         width: calc(100% - 4.8rem);
+    }
+    /* 푸터 */
+    footer ul li:first-of-type,footer ul li:last-of-type{
+        display: none;
+    }
+    footer .show-1050{
+        margin-bottom: 0.8rem;
+    }
+    footer .footer-logo{
+        margin-bottom: 1.5rem;
+    }
+    /* top버튼 */
+    .btn-top{
+        right: 4rem;
     }
 }
 @media (max-width:768px) {
@@ -954,5 +974,54 @@ footer p{
         letter-spacing: -0.02em;
         color: #00D67A;
         background: #111;
+    }
+    footer{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+    .footer-logo{
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    footer ul{
+        margin-bottom: 0.8rem;
+    }
+    footer li{
+        margin-right: 2rem;
+    }
+    footer li::after{
+        right: -1rem;
+        height: 1rem;
+    }
+    footer li:nth-of-type(3){
+        margin-right: 0;
+    }
+    footer li:nth-of-type(3)::after{
+        display: none;
+    }
+    /* top버튼 */
+    .btn-top{
+        right: 1.5rem;
+        width: 5rem;
+        height: 7.5rem;
+    }
+}
+@media (max-width:580px) {
+    /* 사이드 메뉴 */
+    .side-menu ul{
+        width: 100%;
+
+    }
+    .side-menu li{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    .side-menu button{
+        top: 2.2rem;
+        right: 2.1rem;
+        width: 2rem;
+        height: 2rem;
     }
 }
