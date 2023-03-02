@@ -653,6 +653,11 @@ html{
   .project-info .selectbox > ul {
     position: unset;
   }
+  .project-info .selectbox .option {
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
   .client-info > li {
     margin-top: 0;
     width: 100%;
