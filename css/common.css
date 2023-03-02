@@ -31,6 +31,9 @@ html{
   background: url(../images/ico-pointer.png) no-repeat 0 0 /contain;
   z-index: 101;
 } */
+.m-only {
+  display: none;
+}
 .innerframe-1700{
   max-width: 170rem;
   width: 100%;
@@ -40,7 +43,7 @@ html{
 .inner-ty1 {
   display: flex;
   margin: 0 auto;
-  max-width: 170rem;
+  max-width: 190rem;
   width: 100%;
   height: 100%;
 }
@@ -95,6 +98,9 @@ html{
   font-weight: 500;
   line-height: 6rem;
 }
+.project-type + .tit02  {
+  margin-top: 6rem;
+}
 .sub-tit {
   display: block;
   margin-bottom: 2rem;
@@ -124,13 +130,13 @@ html{
   filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
 }
 .left-box {    
-  padding: 13.6rem 10rem 13.6rem 0 ;
-  width: 60rem;
+  padding: 13.6rem 10rem;
+  width: 70rem;
   border-right: 0.1rem solid #777777;
 }
 .right-box {
-  padding: 13.6rem 0 13.6rem 10rem;
-  width: calc(100% - 60rem);
+  padding: 13.6rem 10rem;
+  width: calc(100% - 70rem);
 }
 
 /* contact us */
@@ -166,6 +172,9 @@ html{
   height: 1.4rem;
   color: #00D67A;
 }
+.project-tit {
+  margin-top: 6rem;
+}
 .client-info {
   display: flex;
   flex-wrap: wrap;
@@ -200,21 +209,23 @@ html{
   font-family: "Gmarket sans";
   color: #FFFFFF;
 }
+.project-type + .request-tit  {
+  margin-top: 11rem;
+}
 .project-type {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   margin-top: 2rem;
 }
 .project-type > li > input[type="checkbox"] + label {
   display: inline-block;
   padding: 1.5rem 2.8rem;
   color: #fff;
+  letter-spacing: -0.02em;
   border:1px solid #fff;
   border-radius: 1rem;
   cursor: pointer;
-}
-.project-type > li {
-  margin-right: 2rem;
 }
 .project-type > li > input[type=checkbox] {
   display: none;
@@ -262,17 +273,22 @@ html{
   padding: 0.85rem 0;
   font-size: 1.6rem;
 }
-/* .project-info .selectbox {
-  padding: 8.5rem 1.4rem;
-  font-family: "Gmarket sans";
-  font-size: 1.4rem;
-  border: 1px solid #FFFFFF;
-  background: #111111;
-} */
 .desc-ex {
   margin-left: 1.5rem;
+  width: 100%;
   color: #777;
+  border-bottom: 0.1rem solid #777;
 }
+/* .desc-ex::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background: #777;
+} */
 .project-txt {
   margin-top: 2.5rem;
   padding: 2.3rem;
@@ -309,13 +325,16 @@ html{
 }
 .file-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 1.5rem;
   padding-bottom: 0.8rem;
   width: 100%;
   border-bottom: 0.1rem solid #fff;
 }
 .file-list > li {
-  display: flex;
+  display: flex;    
+  align-items: center;
+  gap: 1.5rem;
   position: relative;
   padding: 1.2rem 4.5rem 1.2rem 1.5rem;
   border: 0.1rem solid #fff;
@@ -360,8 +379,9 @@ html{
   filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
 }
 .location {
-  margin: 0 auto;
-  max-width: 170rem;
+  margin: 0 auto;    
+  padding: 0 10rem;
+  max-width: 190rem;
 }
 .location > address {
   margin-bottom: 3rem;
@@ -515,10 +535,171 @@ html{
   .inner-ty1 {
     flex-direction: column;
   }
+  .left-box {
+    border-right: none;
+    border-bottom: 0.1rem solid #777;
+  }
   .left-box, .right-box {
     width: 100%;
-    padding:13.6rem 10rem 13.6rem 10rem;
+  }
+  .project-tit {
+    display: flex;
+    flex-direction: column;
+  }
+  .desc-ex {
+    margin-left: 0;
+    width: fit-content;
+  }
+}
+
+@media (max-width:768px) {
+  .inner-ty2 {
+    padding: 6rem 0;
+  }
+  .location {
+    padding: 0 2rem;
+  }
+  .m-only {
+    display: block;
+  }
+  .tit01 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .tit02 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .left-box, .right-box {
+    padding: 6rem 2rem;
   }
   .left-box {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .project-type {
+    gap: 1.5rem;
+  }
+  .project-type + .tit02  {
+    margin-top: 3.5rem;
+  }
+  .project-type + .request-tit  {
+    margin-top: 6rem;
+  }
+  .contact-list > li {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .contact-list > li + li {
+    margin-top: 0;
+  }
+  .contact-list > li .c-tit {
+    font-size: 1.5rem;
+  }
+  .request-tit .required {
+    width: 1rem;
+    height: 1rem;
+  }
+  .request-tit {
+    margin-bottom: 3rem;
+  }
+  .request-tit > p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .project-tit {
+    margin-top: 4.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .project-txt {
+    margin-top: 1.5rem;    
+    padding: 2.3rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .desc-ex {
+    margin-top: 1rem;
+  }
+  .btn-area {
+    justify-content: flex-start;
+    margin-top: 6rem;
+  }
+  .btn-send {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .project-type {
+    margin-top: 1.5rem;
+  }
+  .project-type > li > input[type="checkbox"] + label {
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  .project-info {
+    flex-direction: column;
+  }
+  .project-info > div + div {
+    margin-left: 0;
+  }
+  .project-info .selectbox .selected {
+    padding: 1.7rem 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  .project-info .selectbox > ul {
+    position: unset;
+  }
+  .client-info > li {
+    margin-top: 0;
+    width: 100%;
+  }
+  .client-info > li:nth-child(2n) {
+    margin-left: 0;
+  }
+  .client-info {
+    margin-bottom: 6rem;
+  }
+  .client-info input {
+    padding: 1.8rem 1.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .file-area {    
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .file-area .file-add {
+    padding: 1.2rem 1.6rem;
+    min-width: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  .file-list {
+    margin-top: 1.5rem;
+    margin-left: 0;
+    padding-bottom: 1.3rem;
+    gap: 1rem;
+  }
+  .file-list .file-name {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .file-list .file-delete img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .file-desc {
+    padding-left: 1.3rem;
+    line-height: 2.2rem;
+    background: url(../images/ico-file-desc.png) no-repeat left top / 1rem 1rem;
+  }
+  .location > address {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 }
