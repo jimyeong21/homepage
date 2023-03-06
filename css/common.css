@@ -211,6 +211,9 @@ html{
   border-width: 0 0 1px 0;
   border-bottom-color: #FFFFFF;
 }
+.client-info .not > input {
+  border-bottom-color: #00D67A;
+}
 .client-info input::placeholder {
   font-family: "Gmarket sans";
   color: #FFFFFF;
