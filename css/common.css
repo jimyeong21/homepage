@@ -618,6 +618,11 @@ html{
     font-size: 1.4rem;
     line-height: 2.2rem;
   }
+  .btn-line-white {
+    padding: 1.2rem 3.1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .left-box {
     padding: 6rem 1.5rem;
   }
