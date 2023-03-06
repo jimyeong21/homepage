@@ -647,8 +647,14 @@ html{
     margin-top: 6rem;
   }
   .btn-send {
-    font-size: 5rem;
-    line-height: 5rem;
+    padding-right: 19rem;
+    font-size: 4.8rem;
+    line-height: 5rem;    
+    background-size: 12rem 2.2rem;
+  }
+  .btn-send:hover {
+    background: url(../images/btn-send.png) no-repeat right 1.2rem center;
+    background-size: 12rem 2.2rem;
   }
   .project-type {
     margin-top: 1.5rem;
