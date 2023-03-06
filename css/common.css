@@ -327,7 +327,7 @@ html{
   margin-top: 3rem;
 }
 .file-area .file-add {
-  padding: 1.5rem 0;
+  padding: 1.6rem 0 1.4rem 0;
   min-width: 18rem;
   font-weight: 500;
   color: #000;
@@ -353,12 +353,13 @@ html{
   align-items: center;
   gap: 1.5rem;
   position: relative;
-  padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+  padding: 1.2rem 4.5rem 1.1rem 1.5rem;
   border: 0.1rem solid #fff;
   border-radius: 1rem;
 }
 .file-list .file-name {
   font-size: 1.6rem;
+  line-height: 2.5rem;
 }
 .file-list .file-delete {
   position: absolute;
@@ -805,12 +806,16 @@ html{
     min-width: 1.3rem;
     font-size: 1.6rem;
     line-height: 1.5rem;
+    border-radius: 0.8rem;
   }
   .file-list {
     margin-top: 1.5rem;
     margin-left: 0;
     padding-bottom: 1.3rem;
     gap: 1rem;
+  }
+  .file-list > li {
+    border-radius: 0.8rem ;
   }
   .file-list .file-name {
     font-size: 1.4rem;
