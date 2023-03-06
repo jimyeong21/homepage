@@ -148,7 +148,7 @@ h2{
     justify-content: space-between;
     max-width: 23rem;
     width: 100%;
-    padding: 1.6rem 3.1rem;
+    padding: 1.6rem 3.1rem 1.4rem;/*23.03.06*/
     font-weight: 400;
     font-size: 1.7rem;
     line-height: 1.7rem;
@@ -596,7 +596,7 @@ h2{
     }
     .web-box-con button{
         margin-bottom: 6.5rem;
-        padding: 1.3rem 3.1rem 1.2rem;
+        padding: 1.3rem 3.1rem 1.1rem;/*23.03.06 1.2->1.1rem*/
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
@@ -710,6 +710,13 @@ h2{
     /* add-wrap  */
     .add-wrap {
         height: 8rem;
+    }
+    @keyframes email-txt {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+    }
+    .add-wrap  p{
+        animation: email-txt 8s linear infinite;
     }
     .add-wrap span{
         width: 16rem;
