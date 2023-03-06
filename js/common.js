@@ -2,11 +2,11 @@
 $(document).ready(function(){
     //menubtn
     $('.show-side').click(function(){
-        $('.side-menu').show();
+        $('.side-menu').addClass('show');
         $('body').addClass('on')
     })
     $('.btn-menu-close').click(function(){
-        $('.side-menu').hide();
+        $('.side-menu').removeClass('show');
         $('body').removeClass('on')
     })
     //menubtn keydown
