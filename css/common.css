@@ -77,6 +77,9 @@ html{
   border: none;
   background: #00D67A;
 }
+.pagination-box {
+  display: none;
+}
 .fw-300 {
   font-weight: 300 !important;
 }
@@ -602,6 +605,52 @@ html{
     padding: 1.2rem 1.6rem;
     font-size: 1.6rem;
     line-height: 1.5rem;
+  }
+  .pagination-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .pagination-box > button {
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  .pagination-box .btn-first {
+    background-image: url(../images/btn-first.png);
+    background-size: 1.5rem 1.37rem;
+  }
+  .pagination-box .btn-prev {
+    background-image: url(../images/btn-prev.png);
+    background-size: 0.8rem 1.37rem;
+  }
+  .pagination-box .btn-next {
+    transform: rotate(-180deg);
+    background-image: url(../images/btn-prev.png);
+    background-size: 0.8rem 1.37rem;
+  }
+  .pagination-box .btn-last {
+    transform: rotate(-180deg);
+    background-image: url(../images/btn-first.png);
+    background-size: 1.5rem 1.37rem;
+  }
+  .pagination-box p {
+    margin: 0 0.5rem;
+  }
+  .pagination-box p button {
+    min-width: 3rem;
+    height: 3.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: #fff;
+  }
+  .pagination-box p button.active {
+    font-weight: 500;
+    color: #00D67A;
   }
   .location {
     padding: 0 1.5rem;
