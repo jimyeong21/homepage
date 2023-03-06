@@ -1235,6 +1235,7 @@ body.on .side-menu ul{
   /* top버튼 */
   .btn-top{
       right: 1.5rem;
+      bottom:14.6rem;
       width: 5rem;
       height: 7.5rem;
   }
