@@ -1031,7 +1031,7 @@ footer p{
   height: 100vh;
   background: rgba(17, 17, 17, 0.8);
   z-index: 100;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
   opacity: 0;
   pointer-events: none;
 }
@@ -1050,7 +1050,7 @@ footer p{
   background-size: 600% 600% !important;
   animation: main-bg-animation 12s ease infinite !important;
   transform: translateX(100%);
-  transition: all 0.5s ease .3s;
+  transition: all 0.5s ease 0s;
 }
 body.on .side-menu ul{
   transform: translateX(0%);
@@ -1104,7 +1104,7 @@ body.on .side-menu ul{
   width: 2.4rem;
   height: 2.4rem;
   opacity: 0;
-  transition: opacity .3s ease .8s;
+  transition: opacity .3s ease .5s;
   pointer-events: none;
 }
 .side-menu.show button{
