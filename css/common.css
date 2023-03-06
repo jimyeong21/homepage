@@ -524,7 +524,7 @@ html{
   border-top: 0.1rem solid #777;
   z-index: 1;
 }
-.work-img.pc::after {
+/* .work-img.pc::after {
   content: "";
   display: block;
   position: absolute;
@@ -539,7 +539,7 @@ html{
 .work-img.pc .img-box {
   margin: 2.5rem  2.5rem 0 2.5rem;
   max-width: 140rem;
-}
+} */
 .work-img.mobile .img-box{
   margin: 0 auto;
   max-width: 132.5rem;
@@ -872,23 +872,15 @@ html{
     font-size: 1.4rem;
     line-height: 2.2rem;
   }
-  
-  .work-img.pc::after { 
-    top: 4.5rem;
-    left: 2rem;
-    right: 2rem;
-    height: 32.7rem;
-    border-radius: 1rem;
-  }
   .work-page .work-img {
     padding: 4.5rem 1.5rem;
   }
-  .work-page .work-img.pc {
+  /* .work-page .work-img.pc {
     padding: 5.5rem 1.5rem 4.5rem 1.5rem;
   }
   .work-img.pc .img-box {
     margin: 0 1.5rem;
-  }
+  } */
   .work-page {
     margin: 0 auto 6rem;
     border-width: 0 0 0.1rem 0;
