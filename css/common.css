@@ -108,6 +108,9 @@ html{
 .tit-desc {
   line-height: 3rem;
 }
+.about.btn-line-white {
+  margin-top: 5rem;
+}
 .btn-line-white {
   max-width: 23rem;
   width: 100%;
@@ -615,8 +618,11 @@ html{
     font-size: 1.4rem;
     line-height: 2.2rem;
   }
-  .left-box, .right-box {
+  .left-box {
     padding: 6rem 1.5rem;
+  }
+  .right-box {
+    padding: 6rem 1.5rem 8rem 1.5rem;
   }
   .left-box {
     font-size: 1.4rem;
@@ -839,6 +845,34 @@ html{
   }
   .portfolio {
     padding: 6rem 1.5rem 8rem 1.5rem;
+  }
+  .about.btn-line-white {
+    margin-top: 3rem;
+  }
+  .business {
+    margin-bottom: 6rem;
+  }
+  .business > li {
+    padding: 1.3rem 1.4rem ;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .history > li {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .history > li + li {
+    margin-top: 1.5rem;
+  }
+  .history > li > span {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .history > li > p {
+    margin-left: 0;
+    padding: 1.3rem 1.4rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
   }
 }
 
