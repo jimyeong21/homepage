@@ -3,9 +3,22 @@ $(document).ready(function(){
     //menubtn
     $('.show-side').click(function(){
         $('.side-menu').show();
+        $('body').addClass('on')
     })
     $('.btn-menu-close').click(function(){
         $('.side-menu').hide();
+        $('body').removeClass('on')
+    })
+    //menubtn keydown
+    $('.show-side').on('keydown',function(e){
+        if (e.keyCode === 13){
+            $('body').addClass('on')
+        }
+    })
+    $('.btn-menu-close').on('keydown',function(e){
+        if (e.keyCode === 13){
+            $('body').removeClass('on')
+        }
     })
     // top btn
     $(window).scroll(function () {
