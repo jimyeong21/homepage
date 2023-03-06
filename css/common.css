@@ -2,6 +2,10 @@
 body {
   cursor: url(../images/ico-pointer.png), auto !important;
 }
+body.on{
+  touch-action: none;
+  overflow: hidden;
+}
 .wrap{
   color:#fff;
   font-size: 2rem;
