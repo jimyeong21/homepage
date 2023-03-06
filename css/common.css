@@ -55,6 +55,8 @@ html{
 }
 .tab-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin: 9rem 0 3rem 0;
 }
 .tab-list > li {
@@ -70,9 +72,6 @@ html{
   color: #000;
   border: none;
   background: #00D67A;
-}
-.tab-list > li + li {
-  margin-left: 2rem;
 }
 .fw-300 {
   font-weight: 300 !important;
@@ -412,7 +411,7 @@ html{
 }
 .portfolio {
   margin: 0 auto;
-  padding: 13.6rem 0;
+  padding: 13.6rem 11rem;
   max-width: 170rem;
 }
 .work-list {
@@ -569,6 +568,13 @@ html{
     border-right: none;
     border-bottom: 0.1rem solid #777;
   }
+  .work-list > li {
+    margin-top: 3rem !important;
+    width: calc(100% / 2 - 2.4rem);
+  }
+  .work-list > li:nth-child(-n + 2) {
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width:768px) {
@@ -576,13 +582,25 @@ html{
     border: 0.5rem solid #00D67A;
   }
   .inner-ty2 {
-    padding: 6rem 0;
+    padding: 6rem 0 8rem 0;
+  }
+  .tab-list {
+    gap: 1.3rem;
+    margin: 6rem 0 3rem 0;
+  }
+  .tab-list > li > a {
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
   }
   .location {
     padding: 0 1.5rem;
   }
   .m-only {
     display: block;
+  }
+  .pc-only {
+    display: none;
   }
   .tit01 {
     margin-bottom: 1.5rem;
@@ -592,6 +610,10 @@ html{
   .tit02 {
     font-size: 1.5rem;
     line-height: 1.5rem;
+  }
+  .tit-desc {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
   .left-box, .right-box {
     padding: 6rem 1.5rem;
@@ -799,6 +821,24 @@ html{
   }
   .work-page {
     border-width: 0 0 0.1rem 0;
+  }
+  .work-list {
+    gap: 0.5rem;
+  }
+  .work-list > li {
+    width: calc(100% / 2 - 0.5rem);
+  }
+  .work-list .work-name {
+    margin: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .work-list > li > a > .btn-more {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+  .portfolio {
+    padding: 6rem 1.5rem 8rem 1.5rem;
   }
 }
 
