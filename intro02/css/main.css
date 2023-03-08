@@ -41,13 +41,13 @@
         height: 0rem;
     }
     25%{
-        height: 1.4rem;
+        height: 2.4rem;
     }
     50%{
         height: 0rem;
     }
     75%{
-        height: 1.4rem;
+        height: 2.4rem;
     }
     100%{
         height: 0rem;
@@ -66,10 +66,11 @@
         width:0;
     }
     85%{
-        width: 50rem;
+        width: 78rem;
     }
     100%{
-        width: 39rem;
+        /* width: 39rem; */
+        width: 58.5rem;
     }
 }
 @keyframes scale{
@@ -171,7 +172,8 @@
 .int-wrap .flex p{
     position: relative;
     width: 0rem;
-    height:5.8rem;
+    /* height:5.8rem; */
+    height: 8.8rem;
     margin-right: 1rem;
     font-size: 6rem;
     font-weight: 400;
@@ -185,7 +187,8 @@
     height: 100%;
 }
 .int-wrap .flex >img{
-    width: 7.5rem;
+    /* width: 7.5rem; */
+    width: 12rem;
     transform: rotate(90deg);
     animation: rotate 0.3s linear 3.5s;;
     animation-fill-mode: forwards;
@@ -197,9 +200,10 @@
     content: "";
     display: inline-block;
     position: absolute;
-    top: -1rem;
+    top: -2rem;
     right: 0.1rem;
-    width: 6rem;
+    /* width: 6rem; */
+    width: 12rem;
     height: 0;
     background: linear-gradient(
     to bottom,
@@ -329,12 +333,13 @@
     }
 
 }
+*/
 @keyframes gradientMove { 
     0%{background-size: 100% 4px}
     50%{background-size: 100% 2px}
     100%{background-size: 100% 4px}
 }
-.opacity:after{
+/*.opacity:after{
     content: "";
     display: inline-block;
     position: absolute;
