@@ -72,14 +72,15 @@ body:before {
 .scanlines {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 50%;
   width: 100vw;
-  height: 100vh;
+  height: 87vh;
   pointer-events: none;
   z-index: 300;
   opacity: 0.6;
   will-change: opacity;
   animation: opacity 3s linear infinite;
+  transform: translateY(-50%);
 }
 .scanlines:before {
   content: "";
@@ -98,13 +99,14 @@ body:before {
 .intro-wrap {
   position: fixed;
   top: 0;
-  left: 0;
+  top: 50%;
   font-family: "Press Start 2P", cursive;
   color: #fff;
   font-size: 2rem;
   width: 100vw;
-  height: 100vh;
-  background: #00d67a;
+  height: 87vh;
+  background: #002b18;
+  transform: translateY(-50%);
 }
 .intro-wrap .noise:before {
   background-size: 200%;
