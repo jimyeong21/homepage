@@ -443,7 +443,7 @@ h2{
     height: 6rem;
     margin-left: 4rem;
     margin-right: 2.2rem;
-    padding: 0 1.2rem;
+    padding: 0.3rem 1.2rem;
     padding-top: 1rem;
     background: #fff;
     font-weight: 400;
@@ -721,7 +721,6 @@ h2{
     .add-wrap span{
         width: 16rem;
         height: 4rem;
-        padding-bottom: 0.2rem;
         font-size: 3rem;
         line-height: 3rem;
     }
