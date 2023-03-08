@@ -292,7 +292,7 @@ body:before {
   background: #111;
   z-index: 400;
   opacity: 0;
-  animation: screen-cover 0.2s linear 10.4s;
+  animation: screen-cover 0.2s linear 6.8s;
   animation-fill-mode: forwards;
 }
 
@@ -304,7 +304,7 @@ body:before {
   height: 0.2rem;
   transform: translate(-50%, -50%);
   background: #fff;
-  animation: screen-cover2 0.2s linear 10.5s;
+  animation: screen-cover2 0.2s linear 6.9s;
   animation-fill-mode: forwards;
   opacity: 0.8;
 }/*# sourceMappingURL=main2.css.map */
