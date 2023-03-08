@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <title>intro</title>
+</head>
+<body>
+    <div class="btn-wrap">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+    <div class="int-wrap">
+        <div class="scale">
+            <div class="flex">
+                <p>FAIDEMS</p><span></span>
+                <img src="./img/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="int-wrap ">
+        <p class="wave-txt">FAIDEMS:8</p>
+        <div class="wave wave01 opacity"></div>
+        <div class="wave wave02 opacity"></div>
+        <div class="wave wave03 opacity"></div>
+    </div>
+    <div class="int-wrap on">
+        <div class="scanlines-cover">
+            <p></p>
+        </div>
+        <div class="scanlines"></div>
+
+        <div class="intro-wrap">
+        	<div class="noise"></div>
+        	<div class="noise noise-moving"></div>
+        
+        	<div class="play" data-splitting></div>
+        	<div class="time">--:--</div>
+        	<div class="recordSpeed">SLP 0:00:00</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.btn-wrap button').click(function(){
+                let idx = $(this).index();
+                $('.int-wrap').removeClass('on');
+                $('.int-wrap').eq(idx).addClass('on');
+            })
+        })
+        console.clear();
+        // Splitting();
+
+        // 타이핑 효과
+        const $text = document.querySelector(".play");
+
+        // 글자 모음
+        const letters = [
+        "FAIDEMS:8"
+        ];
+
+        // 글자 입력 속도
+        const speed = 200;
+        let i = 0;
+
+        // 타이핑 효과
+        const typing = async () => {  
+          const letter = letters[i].split("");
+        
+          while (letter.length) {
+            await wait(speed);
+            $text.innerHTML += letter.shift(); 
+          }
+
+          // 잠시 대기
+          await wait(800);
+
+          // 지우는 효과
+          remove();
+        }
+
+        // 글자 지우는 효과
+        const remove = async () => {
+          const letter = letters[i].split("");
+        
+          while (letter.length) {
+            await wait(speed);
+
+            letter.pop();
+            $text.innerHTML = letter.join(""); 
+          }
+
+          // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
+          i = !letters[i+1] ? 0 : i + 1;
+          typing();
+        }
+
+        // 딜레이 기능 ( 마이크로초 )
+        function wait(ms) {
+          return new Promise(res => setTimeout(res, ms))
+        }
+
+        // 초기 실행
+        setTimeout(typing, 1500);
+    </script>
+</body>
+</html>
