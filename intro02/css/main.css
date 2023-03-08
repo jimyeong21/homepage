@@ -5,18 +5,16 @@
     box-sizing: border-box;
 }
 .int-wrap{
-    position: relative;
-    display: none;
+    position: fixed;
+    left:0;
+    right: 0;
+    width: 100vw;
     height: 100vh;
     background: #111;
     /* border: 1rem solid #00D67A; */
     color: #fff;
     overflow: hidden;
-}
-.int-wrap.on{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 400;
 }
 @keyframes fleximg{
     0%{
@@ -115,7 +113,21 @@
     animation: opacity2 2s linear 12s;
     animation-fill-mode: forwards;
 } */
-.scale{
+@keyframes introOpacity{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+        display: none;
+    }
+}
+.pick-intro{
+    animation: introOpacity 0.2s linear 7.1s;
+	animation-fill-mode: forwards;
+}
+.int-wrap .scale{
     position: relative;
     display: flex;
     align-items: center;
@@ -126,7 +138,7 @@
     animation-fill-mode: forwards;
     background: #111;
 }
-.scale:after{
+.int-wrap .scale:after{
     content: "";
     display: inline-block;
     position: absolute;
@@ -148,7 +160,7 @@
   animation: gradientMove 200ms ease infinite;
   opacity: 1;
 }
-.flex{
+.int-wrap .flex{
     position: relative;
     display: flex;
     align-items: center;
@@ -156,7 +168,7 @@
     animation-fill-mode: forwards;
     z-index: 2;
 }
-.flex p{
+.int-wrap .flex p{
     position: relative;
     width: 0rem;
     height:5.8rem;
@@ -168,19 +180,20 @@
     animation: width 2.5s linear 4s;;
     animation-fill-mode: forwards;
 }
-.flex p img{
+.int-wrap .flex p img{
+    max-width: unset;
     height: 100%;
 }
-.flex >img{
+.int-wrap .flex >img{
     width: 7.5rem;
     transform: rotate(90deg);
     animation: rotate 0.3s linear 3.5s;;
     animation-fill-mode: forwards;
 }
-.flex span{
+.int-wrap .flex span{
     z-index: 2;
 }
-.flex span::after{
+.int-wrap .flex span::after{
     content: "";
     display: inline-block;
     position: absolute;
@@ -198,7 +211,54 @@
     background-size: 100% 4px;
     animation: after 1.5s linear 2s;
 }
-@keyframes wave{
+/**/
+@keyframes screen-cover{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes screen-cover2{
+	0%{
+		width: 80%;
+		height: 0.2rem;
+		opacity: 0.8;
+	}
+	100%{
+		width: 0%;
+		height: 0rem;
+		opacity: 0;
+	}
+}
+.scanlines-cover2{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #111;
+	z-index: 400;
+	opacity: 0;
+	animation: screen-cover 0.2s linear 6.8s;
+	animation-fill-mode: forwards;
+}
+.scanlines-cover2 p{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	width: 80%;
+	height: 0.2rem;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	animation: screen-cover2 0.2s linear 6.9s;
+	animation-fill-mode: forwards;
+	opacity: 0.8;
+}
+
+
+/* @keyframes wave{
     0%{
         transform: translateX(-50%)translateY(100%)rotate(0);
     }
@@ -338,4 +398,4 @@
 .btn-wrap{
     position: relative;
     z-index: 10000;
-}
+} */
