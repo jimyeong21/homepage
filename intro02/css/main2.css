@@ -281,4 +281,30 @@ body:before {
   animation: screen-cover2 0.2s linear 5.9s;
   animation-fill-mode: forwards;
   opacity: 0.8;
+}
+
+.scanlines-cover2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  z-index: 400;
+  opacity: 0;
+  animation: screen-cover 0.2s linear 10.4s;
+  animation-fill-mode: forwards;
+}
+
+.scanlines-cover2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 0.2rem;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  animation: screen-cover2 0.2s linear 10.5s;
+  animation-fill-mode: forwards;
+  opacity: 0.8;
 }/*# sourceMappingURL=main2.css.map */
