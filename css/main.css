@@ -721,6 +721,7 @@ h2{
     .add-wrap span{
         width: 16rem;
         height: 4rem;
+        padding-bottom: 0.2rem;
         font-size: 3rem;
         line-height: 3rem;
     }
