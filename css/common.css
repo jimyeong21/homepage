@@ -69,14 +69,13 @@ html{
 }
 .tab-list > li > a {
   display: block;
-  margin-top: 0.4rem;
-  padding: 1.3rem 3rem;
+  padding: 1.5rem 3rem 1.1rem 3rem;
   line-height: 2rem;
 }
 .tab-list > li.active {
   font-weight: 500;
   color: #000;
-  border: none;
+  border: 1px solid #00D67A;
   background: #00D67A;
 }
 .pagination-box {
@@ -84,6 +83,9 @@ html{
 }
 .fw-300 {
   font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
 }
 .fw-500 {
   font-weight: 500 !important;
@@ -123,10 +125,10 @@ html{
 .btn-line-white {
   max-width: 23rem;
   width: 100%;
-  padding: 1.6rem 3.1rem;
+  padding: 1.7rem 3.1rem 1.5rem 3.1rem;
   font-weight: 400;
   font-size: 1.7rem;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
   letter-spacing: -0.02em;
   text-align: left;
   color:#fff;
@@ -234,8 +236,9 @@ html{
 }
 .project-type > li > input[type="checkbox"] + label {
   display: inline-block;
-  padding: 1.5rem 2.8rem;
+  padding: 1.6rem 2.8rem 1.4rem 2.8rem;
   color: #fff;
+  line-height: 2rem;
   letter-spacing: -0.02em;
   border:1px solid #fff;
   border-radius: 1rem;
@@ -325,7 +328,7 @@ html{
   margin-top: 3rem;
 }
 .file-area .file-add {
-  padding: 1.5rem 0;
+  padding: 1.6rem 0 1.4rem 0;
   min-width: 18rem;
   font-weight: 500;
   color: #000;
@@ -351,12 +354,13 @@ html{
   align-items: center;
   gap: 1.5rem;
   position: relative;
-  padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+  padding: 1.2rem 4.5rem 1.1rem 1.5rem;
   border: 0.1rem solid #fff;
   border-radius: 1rem;
 }
 .file-list .file-name {
   font-size: 1.6rem;
+  line-height: 2.5rem;
 }
 .file-list .file-delete {
   position: absolute;
@@ -407,8 +411,9 @@ html{
   margin-bottom: 10rem;
 }
 .business > li {
-  padding: 2.4rem 1.3rem;
+  padding: 2.6rem 1.3rem 2.4rem 1.3rem;
   border-bottom: 1px solid #fff;
+  line-height: 2rem;
 }
 .history > li {
   display: flex;
@@ -524,7 +529,7 @@ html{
   border-top: 0.1rem solid #777;
   z-index: 1;
 }
-.work-img.pc::after {
+/* .work-img.pc::after {
   content: "";
   display: block;
   position: absolute;
@@ -539,7 +544,7 @@ html{
 .work-img.pc .img-box {
   margin: 2.5rem  2.5rem 0 2.5rem;
   max-width: 140rem;
-}
+} */
 .work-img.mobile .img-box{
   margin: 0 auto;
   max-width: 132.5rem;
@@ -604,7 +609,6 @@ html{
     margin: 6rem 0 3rem 0;
   }
   .tab-list > li > a {    
-    margin-top: 0.2rem;
     padding: 1.2rem 1.6rem;
     font-size: 1.6rem;
     line-height: 1.5rem;
@@ -678,7 +682,7 @@ html{
     line-height: 2.2rem;
   }
   .btn-line-white {
-    padding: 1.2rem 3.1rem;
+    padding: 1.3rem 3.1rem 1.2rem 3.1rem;
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
@@ -803,12 +807,16 @@ html{
     min-width: 1.3rem;
     font-size: 1.6rem;
     line-height: 1.5rem;
+    border-radius: 0.8rem;
   }
   .file-list {
     margin-top: 1.5rem;
     margin-left: 0;
     padding-bottom: 1.3rem;
     gap: 1rem;
+  }
+  .file-list > li {
+    border-radius: 0.8rem ;
   }
   .file-list .file-name {
     font-size: 1.4rem;
@@ -872,23 +880,15 @@ html{
     font-size: 1.4rem;
     line-height: 2.2rem;
   }
-  
-  .work-img.pc::after { 
-    top: 4.5rem;
-    left: 2rem;
-    right: 2rem;
-    height: 32.7rem;
-    border-radius: 1rem;
-  }
   .work-page .work-img {
     padding: 4.5rem 1.5rem;
   }
-  .work-page .work-img.pc {
+  /* .work-page .work-img.pc {
     padding: 5.5rem 1.5rem 4.5rem 1.5rem;
   }
   .work-img.pc .img-box {
     margin: 0 1.5rem;
-  }
+  } */
   .work-page {
     margin: 0 auto 6rem;
     border-width: 0 0 0.1rem 0;
@@ -918,7 +918,7 @@ html{
     margin-bottom: 6rem;
   }
   .business > li {
-    padding: 1.3rem 1.4rem ;
+    padding: 1.5rem 1.4rem 1.2rem 1.4rem;
     font-size: 1.5rem;
     line-height: 2.4rem;
   }
