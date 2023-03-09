@@ -559,6 +559,11 @@ html{
   width: 100%;
 }
 
+@media (max-width:1570px) {
+  .work-list > li > a > img {
+    height: 37rem;
+  }
+}
 @media (max-width:1400px) {
   .inner-ty1 {
     flex-direction: column;
@@ -940,6 +945,22 @@ html{
     padding: 1.3rem 1.4rem;
     font-size: 1.5rem;
     line-height: 2.4rem;
+  }
+}
+
+@media (max-width:600px) {
+  .work-list > li > a > img {
+    height: 33rem;
+  }
+}
+@media (max-width:520px) {
+  .work-list > li > a > img {
+    height: 23rem;
+  }
+}
+@media (max-width: 370px) {
+  .work-list > li > a > img {
+    height: 20rem;
   }
 }
 

@@ -44,74 +44,74 @@
       </p>
 
       <ul class="tab-list">
-        <li class="active"><a href="#n">전체</a></li>
-        <li><a href="#n">웹사이트</a></li>
-        <li><a href="#n">반응형 웹</a></li>
-        <li><a href="#n">애플리케이션(App)</a></li>
-        <li><a href="#n">시스템</a></li>
-        <li><a href="#n">키오스크</a></li>
-        <li><a href="#n">기타</a></li>
+        <li id="all" class="active"><a href="#n">전체</a></li>
+        <li id="web"><a href="#n">웹사이트</a></li>
+        <li id="res"><a href="#n">반응형 웹</a></li>
+        <li id="app"><a href="#n">애플리케이션(App)</a></li>
+        <li id="system"><a href="#n">시스템</a></li>
+        <li id="kiosk"><a href="#n">키오스크</a></li>
+        <li id="etc"><a href="#n">기타</a></li>
       </ul>
 
       <div class="tab-con">
         <ul class="work-list">
-          <li>
+          <li class="web res">
             <a href="#n">
               <img src="../images/img-thumb-ajou.jpg" alt="성균관대학교 IMBA">
               <p class="work-name">성균관대학교 IMBA</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="web res">
             <a href="#n">
               <img src="../images/img-thumb-ajou.jpg" alt="서울 생활문화 플랫폼">
               <p class="work-name">서울 생활문화 플랫폼</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="system">
             <a href="#n">
               <img src="../images/img-thumb-ajou.jpg" alt="아주대학교 인사평가시스템">
               <p class="work-name">아주대학교 인사평가시스템</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="app">
             <a href="#n">
               <img src="../images/img-thumb-foodapp.jpg" alt="뷔페 식단 예약 앱">
               <p class="work-name">뷔페 식단 예약 앱</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="web res">
             <a href="#n">
               <img src="../images/img-thumb-knsu.png" alt="한국체육대학교 대표 홈페이지">
               <p class="work-name">한국체육대학교 대표 홈페이지</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="kiosk">
             <a href="#n">
               <img src="../images/img-thumb-smart.png" alt="SMART 밴딩머신">
               <p class="work-name">SMART 밴딩머신</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="web res">
             <a href="#n">
               <img src="../images/img-thumb-jeonju.jpg" alt="전주대학교 원격지원교육센터">
               <p class="work-name">전주대학교 원격지원교육센터</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="app">
             <a href="#n">
               <img src="../images/img-thumb-unicity.jpg" alt="유니시티 폐쇄몰">
               <p class="work-name">유니시티 폐쇄몰앱</p>
               <span class="btn-more">MORE VIEW</span>
             </a>
           </li>
-          <li>
+          <li class="etc">
             <a href="#n">
               <img src="../images/img-thumb-seah.jpg" alt="모바일 그룹웨어">
               <p class="work-name">모바일 그룹웨어</p>
@@ -154,16 +154,31 @@
   <script>
 
     // Tab
-    $(".tab-list li").on("click", function () {
-      let idxN = $(this).index();
-      $(".tab-list li").removeClass("active");
-      $(".tab-list li a").attr("title", "");
-      $(this).addClass("active");
-      $(this).children().attr("title", "선택된 탭");
-      $(".tab-con").removeClass("active");
-      $(".tab-con").eq(idxN).addClass("active");
-    });
+    // $(".tab-list li").on("click", function () {
+    //   let idxN = $(this).index();
+    //   $(".tab-list li").removeClass("active");
+    //   $(".tab-list li a").attr("title", "");
+    //   $(this).addClass("active");
+    //   $(this).children().attr("title", "선택된 탭");
+    //   $(".tab-con").removeClass("active");
+    //   $(".tab-con").eq(idxN).addClass("active");
+    // });
 
+
+    $(document).ready(function() {
+	
+
+      var $btns = $('.tab-list li').click(function() {
+        if (this.id == 'all') {
+          $('.work-list > li').fadeIn(450);
+        } else {
+          var $el = $('.' + this.id).fadeIn(450);
+          $('.work-list > li').not($el).hide();
+        }
+        $btns.removeClass('active');
+        $(this).addClass('active');
+      })
+    });
   </script>
 </body>
 </html>
