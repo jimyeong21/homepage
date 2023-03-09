@@ -437,13 +437,13 @@ html{
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 2.4rem;
 }
 .work-list > li {
   display: flex;
   margin-top: 3.1rem;
-  width: calc(100% / 4 - 2.4rem);
+  width: calc(100% / 4 - 1.8rem);
 }
 .work-list > li:nth-child(-n + 4) {
   margin-top: 0;
@@ -590,7 +590,7 @@ html{
   }
   .work-list > li {
     margin-top: 3rem !important;
-    width: calc(100% / 2 - 2.4rem);
+    width: calc(100% / 2 - 1.8rem);
   }
   .work-list > li:nth-child(-n + 2) {
     margin-top: 0 !important;
@@ -894,7 +894,7 @@ html{
     border-width: 0 0 0.1rem 0;
   }
   .work-list {
-    gap: 0.5rem;
+    gap: 1rem;
   }
   .work-list > li {
     width: calc(100% / 2 - 0.5rem);
