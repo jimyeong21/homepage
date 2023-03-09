@@ -4,7 +4,7 @@
   padding: 0;
   font-family: 'Electrolize';
   font-size: 2em;
-  background: #000;
+  background: #111;
   
   /* background-color: hsla(0, 0%, 10%, 1); */
   color: hsla(0, 0%, 93%, 1);
@@ -17,11 +17,9 @@
 }
 
 .text {
-  position: absolute;
-  top: 45%;
-  left: 39%;
-  margin: 0;
-  font-size: 100px;
+  margin: 20% 0 0 0;
+  text-align: center;
+  font-size: 150px;
   animation: chromaticMove 4500ms ease infinite,pulse ease 200ms  infinite,scale 0.1s linear 4.5s;
   /* animation: glitch1 2.5s linear 4s infinite */
   cursor: pointer;
@@ -31,6 +29,24 @@
 .text:hover {
   color:#00D67A;
   animation:none;
+}
+#anim > img {
+  margin-right: 1rem;
+  width: 100px;
+  filter: drop-shadow(3px 2px 2px rgba(251, 12, 12,1));
+  filter: drop-shadow(0px -1px 3px rgba(12, 79, 251,.5));
+}
+#anim > img:nth-child(3) {
+  width: 0.93rem;
+}
+#anim > img:nth-child(8) {
+  margin-right: 0;
+  width: 7.2rem;
+}
+
+#anim.second > img {
+  width: 100px;
+  filter: drop-shadow(0px -1px 3px rgba(12, 79, 251,.5));
 }
 .p2 {
   position: absolute;

@@ -12,13 +12,28 @@
   <div class="wrap">
     <p class="text">
       <span id="anim"></span><span id="shuffle"></span>
+      <span id="anim" class="second"></span><span id="shuffle"></span>
     </p>
   </div>
 </body>
 <script>
+  
+  const images = ["logo-f.png", "logo-a.png", "logo-i.png", "logo-d.png", "logo-e.png", "logo-m.png", "logo-s.png", "logo-8.png"];
+  const chosenImage = images[Math.floor(Math.random() * images.length)];
+
+  // images.forEach((item) => {
+  //   console.log(item);
+  //   const bgImage = document.createElement("img");
+  //   bgImage.src = `images/${item}`;
+  //   document.getElementById('anim').appendChild(bgImage);
+  //   console.log(bgImage);
+  // });
+
+  
   var $ = function(id) {
     return document.getElementById(id);
   };
+  
   var inc = 0;
   var out = 0;
   var str = 'FAIDEMS:8';
@@ -27,19 +42,21 @@
 
   var anim = function() {
     inc++;
-    if (inc % 7 === 0 && out < str.length) {
-      $('anim').appendChild(document.createTextNode(str[out]));
+    if (inc % 7 === 0 && out < images.length) {
+      const bgImage = document.createElement("img");
+      bgImage.src = `images/${images[out]}`;
+      $('anim').appendChild(bgImage);
       out++;
-    } else if (out >= str.length) {
+    } else if (out >= images.length) {
       $('shuffle').innerHTML = '';
-      removeInterval(t);
+      clearInterval();
+      return false;
     }
-    $('shuffle').innerHTML =
-      chars[Math.floor(Math.random() * chars.length)];
+
+    $('shuffle').innerHTML = chars[Math.floor(Math.random() * chars.length)];
   };
   t = setInterval(anim, 50);
   $('anim').innerHTML = '';    
-
 
 
 </script>
