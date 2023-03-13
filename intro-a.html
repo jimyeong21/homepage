@@ -10,54 +10,10 @@
 </head>
 <style>
   
-@keyframes screen-cover{
-	0%{
-		opacity: 0%;
-	}
-	100%{
-		opacity: 1;
-	}
-}
-@keyframes screen-cover2{
-	0%{
-		width: 80%;
-		height: 0.2rem;
-		opacity: 0.8;
-	}
-	100%{
-		width: 0%;
-		height: 0rem;
-		opacity: 0;
-	}
-}
-.scanlines-cover2{
-	position: fixed;
-	top:0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background: #111;
-	z-index: 400;
-	opacity: 0;
-	animation: screen-cover 0.2s linear 4.2s;
-	animation-fill-mode: forwards;
-}
-.scanlines-cover2 p{
-	position: absolute;
-	top:50%;
-	left: 50%;
-	width: 80%;
-	height: 0.2rem;
-	transform: translate(-50%,-50%);
-	background: #fff;
-	animation: screen-cover2 0.2s linear 4.3s;
-	animation-fill-mode: forwards;
-	opacity: 0.8;
-}
 </style>
 <body class="body2">  
   <div class="scanlines-cover2">
-      <p></p>
+    <p></p>
   </div>
   <div class="wrap">
     <p class="text">
@@ -66,6 +22,7 @@
   </div>
 </body>
 <script>
+   setTimeout(function(){ window.location.href="intro-a.html" }, 4900);
   
   const images = ["logo-f.png", "logo-a.png", "logo-i.png", "logo-d.png", "logo-e.png", "logo-m.png", "logo-s.png", "logo-8.png"];
   const chosenImage = images[Math.floor(Math.random() * images.length)];
@@ -106,40 +63,6 @@
   };
   t = setInterval(anim, 50);
   $('anim').innerHTML = '';    
-
-
-
-
-  //마우스
-  // const circle = document.querySelector('.circle')
-
-  // let mouseX = 0
-  // let mouseY = 0
-
-  // let circleX = 0
-  // let circleY = 0
-
-  // let speed = 0.1
-
-  // const animate = () => {
-  //   let distX = mouseX - circleX
-  //   let distY = mouseY - circleY
-  //   let translatedValue = `translate3d(${circleX}px, ${circleY}px, 0 )`;
-    
-  //   circleX = circleX + (distX * speed)
-  //   circleY = circleY + (distY * speed)    
-    
-  //   circle.style.transform = translatedValue;
-    
-  //   requestAnimationFrame(animate)
-  // }
-
-  // animate()
-
-  // document.addEventListener('mousemove', (e) => {
-  //   mouseX = e.clientX - circle.offsetWidth / 2;
-  //   mouseY = e.clientY - circle.offsetHeight / 2;
-  // })
 
 
 
