@@ -275,7 +275,7 @@ body:before {
   background: #111;
   z-index: 400;
   opacity: 0;
-  animation: screen-cover 0.2s linear 5.9s;
+  animation: screen-cover 0.2s linear 3.9s;
   animation-fill-mode: forwards;
 }
 
@@ -287,7 +287,7 @@ body:before {
   height: 0.2rem;
   transform: translate(-50%, -50%);
   background: #00d67a;
-  animation: screen-cover2 0.2s linear 5.9s;
+  animation: screen-cover2 0.2s linear 4s;
   animation-fill-mode: forwards;
   opacity: 0.8;
 }
