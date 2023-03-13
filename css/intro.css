@@ -26,15 +26,27 @@
   transition: all 0.1s ease-in-out;
   z-index: 10;
 }
-.text:hover {
+/* .text:hover {
   color:#00D67A;
   animation:none;
+} */
+.circle {
+  width: 14vmax; height: 14vmax;
+  background-color: #FFF;
+  position: absolute;
+  top: 60px; left: 60px;
+  mix-blend-mode: difference; 
+  border-radius: 50%;
+  will-change: transform;
 }
 #anim > img {
   margin-right: 1rem;
   width: 100px;
   filter: drop-shadow(3px 2px 2px rgba(251, 12, 12,1));
   filter: drop-shadow(0px -1px 3px rgba(12, 79, 251,.5));
+}
+#anim > img:nth-child(1) {
+  margin-right: 0;
 }
 #anim > img:nth-child(3) {
   width: 0.93rem;

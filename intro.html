@@ -8,8 +8,59 @@
   <link rel="stylesheet" href="./css/intro.css">
   <script src="./js/jquery-3.6.1.min.js"></script>
 </head>
+<style>
+  
+@keyframes screen-cover{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes screen-cover2{
+	0%{
+		width: 80%;
+		height: 0.2rem;
+		opacity: 0.8;
+	}
+	100%{
+		width: 0%;
+		height: 0rem;
+		opacity: 0;
+	}
+}
+.scanlines-cover2{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #111;
+	z-index: 400;
+	opacity: 0;
+	animation: screen-cover 0.2s linear 4.2s;
+	animation-fill-mode: forwards;
+}
+.scanlines-cover2 p{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	width: 80%;
+	height: 0.2rem;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	animation: screen-cover2 0.2s linear 4.3s;
+	animation-fill-mode: forwards;
+	opacity: 0.8;
+}
+</style>
 <body class="body2">
   <!-- <div class="circle"></div> -->
+  
+  <div class="scanlines-cover2">
+      <p></p>
+  </div>
   <div class="wrap">
     <p class="text">
       <span id="anim"></span><span id="shuffle"></span>
@@ -88,8 +139,8 @@
   // animate()
 
   // document.addEventListener('mousemove', (e) => {
-  //   mouseX = e.clientX - circle.offsetWidth / 4;
-  //   mouseY = e.clientY - circle.offsetHeight / 4;
+  //   mouseX = e.clientX - circle.offsetWidth / 2;
+  //   mouseY = e.clientY - circle.offsetHeight / 2;
   // })
 
 
