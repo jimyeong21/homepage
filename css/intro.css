@@ -49,11 +49,11 @@
   margin-right: 0;
 }
 #anim > img:nth-child(3) {
-  width: 0.93rem;
+  width: 20px;
 }
 #anim > img:nth-child(8) {
   margin-right: 0;
-  width: 7.2rem;
+  width: 135px;
 }
 
 #anim.second > img {
