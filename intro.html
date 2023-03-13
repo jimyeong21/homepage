@@ -9,10 +9,10 @@
   <script src="./js/jquery-3.6.1.min.js"></script>
 </head>
 <body class="body2">
+  <!-- <div class="circle"></div> -->
   <div class="wrap">
     <p class="text">
       <span id="anim"></span><span id="shuffle"></span>
-      <span id="anim" class="second"></span><span id="shuffle"></span>
     </p>
   </div>
 </body>
@@ -57,6 +57,41 @@
   };
   t = setInterval(anim, 50);
   $('anim').innerHTML = '';    
+
+
+
+
+  //마우스
+  // const circle = document.querySelector('.circle')
+
+  // let mouseX = 0
+  // let mouseY = 0
+
+  // let circleX = 0
+  // let circleY = 0
+
+  // let speed = 0.1
+
+  // const animate = () => {
+  //   let distX = mouseX - circleX
+  //   let distY = mouseY - circleY
+  //   let translatedValue = `translate3d(${circleX}px, ${circleY}px, 0 )`;
+    
+  //   circleX = circleX + (distX * speed)
+  //   circleY = circleY + (distY * speed)    
+    
+  //   circle.style.transform = translatedValue;
+    
+  //   requestAnimationFrame(animate)
+  // }
+
+  // animate()
+
+  // document.addEventListener('mousemove', (e) => {
+  //   mouseX = e.clientX - circle.offsetWidth / 4;
+  //   mouseY = e.clientY - circle.offsetHeight / 4;
+  // })
+
 
 
 </script>
