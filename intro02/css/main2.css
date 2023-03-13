@@ -105,7 +105,7 @@ body:before {
   font-size: 2rem;
   width: 100vw;
   height: 87vh;
-  background: #002b18;
+  background: rgba(5, 92, 47, 0.7411764706);
   transform: translateY(-50%);
 }
 .intro-wrap .noise:before {
@@ -124,7 +124,7 @@ body:before {
 .intro-wrap .play img {
   height: 100%;
   margin-right: 1rem;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .intro-wrap .play img:first-of-type, .intro-wrap .play img:last-of-type {
   margin-right: 0;
@@ -275,7 +275,7 @@ body:before {
   background: #111;
   z-index: 400;
   opacity: 0;
-  animation: screen-cover 0.2s linear 3.9s;
+  animation: screen-cover 0.2s linear 2.6s;
   animation-fill-mode: forwards;
 }
 
@@ -287,7 +287,7 @@ body:before {
   height: 0.2rem;
   transform: translate(-50%, -50%);
   background: #00d67a;
-  animation: screen-cover2 0.2s linear 4s;
+  animation: screen-cover2 0.2s linear 2.7s;
   animation-fill-mode: forwards;
   opacity: 0.8;
 }
