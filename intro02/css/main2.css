@@ -115,10 +115,18 @@ body:before {
   position: absolute;
   left: 50%;
   top: 50%;
+  height: 5rem;
   font-size: 94px;
   will-change: text-shadow;
   animation: rgbText 2s steps(9) 0s infinite alternate;
   transform: translate(-50%, -50%);
+}
+.intro-wrap .play img {
+  height: 100%;
+  margin-right: 1rem;
+}
+.intro-wrap .play img:first-of-type, .intro-wrap .play img:last-of-type {
+  margin-right: 0;
 }
 .intro-wrap .play .char {
   will-change: opacity;

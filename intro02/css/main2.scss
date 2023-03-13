@@ -131,11 +131,18 @@ body {
 		position: absolute;
 		left: 50%;
 		top: 50%;
+		height: 5rem;
 		font-size: 94px;
 		will-change: text-shadow;
 		animation: rgbText 2s steps(9) 0s infinite alternate;
 		transform: translate(-50%, -50%);
-
+		img{
+			height: 100%;
+			margin-right: 1rem;
+		}
+		img:first-of-type,img:last-of-type{
+			margin-right: 0;
+		}
 		.char {
 			will-change: opacity;
 			animation: type 1.2s infinite alternate;
