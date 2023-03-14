@@ -57,7 +57,9 @@ h2{
     border-bottom: 0.1rem solid #777;
 }
 
-
+.br768{
+    display: none;
+}
 
 
 /* 비쥬얼 */
@@ -207,6 +209,7 @@ h2{
 .visu-txtimg-box img{
     height: 100%;
     object-fit: contain;
+    margin-right: 6.6rem;
 }
 .img-visu01{
     display: flex;
@@ -226,6 +229,7 @@ h2{
 .img-visu02 img{
     width: 290rem;
     max-width: 150%;
+    margin-right: 10rem;
 }
 .img-visu02 p{
     height: 11.1rem;
@@ -460,16 +464,106 @@ h2{
 }
 
 /* contact-us */
+@keyframes contactBefore{
+    0%{
+        left:35%
+    }
+    100%{
+        left: 48%
+    }
+}
+@keyframes contectAfter{
+    0%{
+        right:35%;
+    }
+    100%{
+        right: 48%;
+    }
+}
 .contact-us{
-    height: 58.9rem;
+    /* height: 58.9rem; */
     border-bottom: none !important;
 }
 .contact-us .innerframe-1700{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+.contact-us .innerframe-1700::before{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left: 0;
+    width: 28.3rem;
+    height: 28.3rem;
+    background: rgba(85, 85, 85, 0.3);
+    opacity: 0.6;
+    border: 0.2rem solid #00D67A;
+    border-radius: 1rem;
+    transform: translateY(-50%)rotate(-45deg);
+    animation: contactBefore 3s linear 0s infinite;
+    animation-direction:alternate;
+    content: "";
+}
+.contact-us .innerframe-1700::after{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    right: 0;
+    width: 28.3rem;
+    height: 28.3rem;
+    background: rgba(109, 209, 166, 0.25);
+    opacity: 0.3;
+    border: 0.2rem solid #00D67A;
+    border-radius: 1rem;
+    transform: translateY(-50%)rotate(-45deg);
+    animation: contectAfter 3s linear 0s infinite;
+    animation-direction:alternate;
+    content: "";
+}
+.contact-us h1{
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    font-size: 9rem;
+    line-height: 9rem;
+    z-index: 2;
+}
+.contact-us p{
+    margin-bottom: 20rem;
+    z-index: 2;
+}
+.contact-us a{
+    display: inline-block;
+    position: absolute;
+    padding:0 7rem 1.3rem 1.25rem;
+    right:0;
+    bottom:10rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.02em;
+    color: #00D67A;
+}
+.contact-us a::after{
+    display: inline-block;
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/ico-right02.png') no-repeat 0 100% / 100% auto;
+    content: "";
+    transition: all 0.3s linear 0s;
+}
+.contact-us a:hover::after{
+    filter: invert(50%) sepia(93%) saturate(1015%) hue-rotate(113deg) brightness(101%) contrast(102%);
+}
+/* 
 .contact-us .web-box{
     max-width: 76rem;
-}
+} */
 
 
 
@@ -485,9 +579,12 @@ h2{
     }
 }
 @media (max-width:1480px){
-    .o-serv .innerframe-1700,.contact-us .innerframe-1700{
+    .o-serv .innerframe-1700{
         flex-direction: column;
     }
+    /* .contact-us .innerframe-1700{
+        flex-direction: column;
+    } */
     .main-con-r{
         border:0;
     }
@@ -495,7 +592,7 @@ h2{
         justify-content: center;
         padding-left: 0;
     }
-    .contact-us{
+    /* .contact-us{
         height: auto;
         padding-bottom: 10.7rem;
     }
@@ -511,7 +608,7 @@ h2{
         min-height: unset;
         width: calc(100% - 4.8rem);
         transform: unset;
-    }
+    } */
 }
 @media (max-width:1050px){
     /* 비쥬얼 */
@@ -523,7 +620,11 @@ h2{
         min-height: unset;
         width: calc(100% - 4.8rem);
     }
-    
+    /* contact-us */
+    .contact-us h1{
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
 }
 @media (max-width:768px) {
     .wrap{
@@ -539,7 +640,9 @@ h2{
         font-size: 1.4rem;
         line-height: 2.2rem;
     }
-    
+    .br768{
+        display: block;
+    }
     /* 비쥬얼 */
     @keyframes vi-under-btn{
         0%{
@@ -729,7 +832,7 @@ h2{
         line-height: 3rem;
     }
     /* contact-us */
-    .contact-us .main-con-r{
+    /* .contact-us .main-con-r{
         margin-top: 0;
     }
     .contact-us .web-box{
@@ -750,6 +853,50 @@ h2{
         letter-spacing: -0.02em;
         color: #00D67A;
         background: #111;
+    } */
+    .contact-us .innerframe-1700::before,.contact-us .innerframe-1700::after{
+        top:6.8rem;
+        width: 13.4rem;
+        height: 13.4rem;
+        transform:rotate(-45deg);
+        border-radius: 0.6rem;
     }
-    
+    .contact-us h1{
+        margin-top: 11.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .contact-us p{
+        margin-bottom: 7.4rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        text-align: center;
+    }
+    .contact-us a{
+        position: relative;
+        bottom: 0;
+        margin-bottom: 7.6rem;
+        padding: 0 5.75rem 1rem 0.95rem;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+}
+@media (max-width:480px){
+    @keyframes contactBefore{
+        0%{
+            left:17%
+        }
+        100%{
+            left: 48%
+        }
+    }
+    @keyframes contectAfter{
+        0%{
+            right:17%;
+        }
+        100%{
+            right: 48%;
+        }
+    }
 }
