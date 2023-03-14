@@ -843,6 +843,7 @@ html{
   .file-desc {
     padding-left: 1.3rem;
     line-height: 2.2rem;
+    font-size: 1.4rem;
     background: url(../images/ico-file-desc.png) no-repeat left top / 1rem 1rem;
   }
   .location > address {
@@ -1285,5 +1286,11 @@ body.on .side-menu ul{
       right: 2.1rem;
       width: 2rem;
       height: 2rem;
+  }
+}
+
+@media (max-width:370px) {
+  .work-list > li > a > img {
+    height: 19rem;
   }
 }
