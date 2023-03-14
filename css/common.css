@@ -1272,7 +1272,7 @@ body.on .side-menu ul{
     height: 23rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 376px) {
   .work-list > li > a > img {
     height: 19rem;
   }
