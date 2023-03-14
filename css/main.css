@@ -571,6 +571,10 @@ h2{
     .wrap>div .innerframe-1700{
         padding: 0 2rem;
     }
+    /* contact-us */
+    .contact-us a{
+        right: 2rem;
+    }
 }
 @media (max-width:1600px){
     .main-con-l {
@@ -876,6 +880,7 @@ h2{
     .contact-us a{
         position: relative;
         bottom: 0;
+        right: 0;
         margin-bottom: 7.6rem;
         padding: 0 5.75rem 1rem 0.95rem;
         font-size: 1.6rem;
