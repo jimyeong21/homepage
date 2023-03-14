@@ -22,7 +22,7 @@
   </div>
 </body>
 <script>
-   setTimeout(function(){window.location.href="index.html"}, 4400);
+   setTimeout(function(){window.location.href="index.html"}, 3200);
   
   const images = ["logo-f.png", "logo-a.png", "logo-i.png", "logo-d.png", "logo-e.png", "logo-m.png", "logo-s.png", "logo-8.png"];
   const chosenImage = images[Math.floor(Math.random() * images.length)];
@@ -43,7 +43,8 @@
   var inc = 0;
   var out = 0;
   var str = 'FAIDEMS:8';
-  var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@$%&';
+  var chars = 'ABEHKNQTWZ25689@$%&';
+  //var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@$&';
   var t;
 
   var anim = function() {
@@ -61,7 +62,7 @@
 
     $('shuffle').innerHTML = chars[Math.floor(Math.random() * chars.length)];
   };
-  t = setInterval(anim, 50);
+  t = setInterval(anim, 40);
   $('anim').innerHTML = '';    
 
 
