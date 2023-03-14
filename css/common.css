@@ -419,6 +419,9 @@ html{
   display: flex;
   align-items: center;
 }
+.history > li + li {
+  margin-top: 4rem;
+}
 .history > li > span {
   margin-top: 0.5rem;
   font-size: 7rem;
@@ -928,7 +931,7 @@ html{
     flex-direction: column;
   }
   .history > li + li {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
   .history > li > span {
     font-size: 4.5rem;
