@@ -466,18 +466,18 @@ h2{
 /* contact-us */
 @keyframes contactBefore{
     0%{
-        left:35%
+        left:33%
     }
     100%{
-        left: 48%
+        left: 50%
     }
 }
 @keyframes contectAfter{
     0%{
-        right:35%;
+        right:33%;
     }
     100%{
-        right: 48%;
+        right: 50%;
     }
 }
 .contact-us{
@@ -503,7 +503,7 @@ h2{
     border: 0.2rem solid #00D67A;
     border-radius: 1rem;
     transform: translateY(-50%)rotate(-45deg);
-    animation: contactBefore 3s linear 0s infinite;
+    animation: contactBefore 3.5s linear 0s infinite;
     animation-direction:alternate;
     content: "";
 }
@@ -519,7 +519,7 @@ h2{
     border: 0.2rem solid #00D67A;
     border-radius: 1rem;
     transform: translateY(-50%)rotate(-45deg);
-    animation: contectAfter 3s linear 0s infinite;
+    animation: contectAfter 3.5s linear 0s infinite;
     animation-direction:alternate;
     content: "";
 }
