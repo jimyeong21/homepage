@@ -51,6 +51,11 @@ html{
   width: 100%;
   height: 100%;
 }
+.inner-ty1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .inner-ty2  {
   padding: 13.6rem 0;
   width: 100%;
@@ -145,11 +150,15 @@ html{
 .left-box {    
   padding: 13.6rem 10rem;
   width: 70rem;
-  border-right: 0.1rem solid #777777;
+}
+.left-box > div {
+  position: sticky;
+  top: 13.6rem;
 }
 .right-box {
   padding: 13.6rem 10rem;
   width: calc(100% - 70rem);
+  border-left: 0.1rem solid #777777;
 }
 
 /* contact us */
@@ -418,6 +427,9 @@ html{
 .history > li {
   display: flex;
   align-items: center;
+}
+.history > li + li {
+  margin-top: 4rem;
 }
 .history > li > span {
   margin-top: 0.5rem;
@@ -928,7 +940,7 @@ html{
     flex-direction: column;
   }
   .history > li + li {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
   .history > li > span {
     font-size: 4.5rem;

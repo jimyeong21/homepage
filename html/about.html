@@ -55,13 +55,15 @@
     </div>
     <div class="inner-ty1">
       <div class="left-box">
-        <h2 class="tit01">&lt; About / &gt;</h2>
-        <p class="tit-desc">
-          (주)파이뎀스에잇은 토탈 웹에이전시로<br>
-          홈페이지, 애플리케이션, 키오스크 등 멀티 플랫폼에 대한<br>
-          다양한 레퍼런스를 보유하고 있는 전문 회사입니다.
-        </p>
-        <button class="about btn-line-white" onclick="location.href ='contactUs.html'">CONTACT US</button>
+        <div>
+          <h2 class="tit01">&lt; About / &gt;</h2>
+          <p class="tit-desc">
+            (주)파이뎀스에잇은 토탈 웹에이전시로<br>
+            홈페이지, 애플리케이션, 키오스크 등 멀티 플랫폼에 대한<br>
+            다양한 레퍼런스를 보유하고 있는 전문 회사입니다.
+          </p>
+          <button class="about btn-line-white" onclick="location.href ='contactUs.html'">CONTACT US</button>
+        </div>
       </div>
       <div class="right-box">
         <!--  part 1 -->
@@ -114,4 +116,11 @@
     <button class="btn-top"></button>
   </div>
 </body>
+<script>
+  let footerH = $("footer").height();
+  let contH = $(".inner-ty2").height;
+  let addH = footerH + contH
+  
+  $('.inner-ty1').css("margin-bottom",addH);
+</script>
 </html>
